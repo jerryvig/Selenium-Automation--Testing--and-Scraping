@@ -1,0 +1,29 @@
+import org.openqa.selenium.firefox.FirefoxDriver;
+import au.com.bytecode.opencsv.CSVWriter;
+import java.io.IOException;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.util.List;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.By;
+
+public class GSAAuctions {
+  public static void main( String[] args ) {
+    try {
+
+     CSVWriter myWriter = new CSVWriter( new FileWriter( "./GeeksDotCom.csv" ) );
+
+     FirefoxDriver driver = new FirefoxDriver();
+
+     driver.get( "http://gsaauctions.gov/gsaauctions/gsaauctions/" ); 
+
+     List<WebElement> inputList = driver.findElementsById("scSrchDescCtxt");
+     inputList.get(0).sendKeys( "backhoe" );
+    
+
+     myWriter.close();
+
+    }
+    catch ( Exception e ) { e.printStackTrace(); }
+  }
+}

@@ -1,0 +1,2 @@
+Main-Class: ScrapeOptioneticsOnDemand
+Class-Path: htmlparser.jar ScrapeOptioneticsTicker

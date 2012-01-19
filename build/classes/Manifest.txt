@@ -1,0 +1,2 @@
+Main-Class: com.mktneutral.ScrapeOptioneticsOnDemand
+Class-Path: com.mktneutral.ScrapeOptioneticsTicker htmlparser.jar

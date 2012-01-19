@@ -1,0 +1,318 @@
+package com.mktneutral;
+
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
+import java.io.IOException;
+import java.util.List;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.By;
+import java.sql.Connection;
+import java.sql.Statement;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.net.URL;
+import java.net.MalformedURLException;
+import java.net.HttpURLConnection;
+import java.net.URLEncoder;
+import java.io.OutputStreamWriter;
+import java.io.InputStreamReader;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.OutputStream;
+import org.htmlparser.Parser;
+import org.htmlparser.Node;
+
+import org.htmlparser.util.NodeList;
+import org.htmlparser.util.ParserException;
+
+public class GovAuctions {
+    private static String searchString;
+    private static FirefoxDriver driver;
+    private static String responseData; 
+    private static Connection hsql;
+    private static Statement stmt;
+    private static String searchState;
+    private static String[] stateList;
+
+    public static void main( String[] args ) {
+	stateList = new String[]{ "AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "DC", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY", "PR" };
+
+	String resp = runScrapers("gold", 4, "VA" );
+	System.out.println( resp );        
+    }
+
+    public static String runScrapers( String _searchString, int searchEngineInt, String _searchState ) { 
+	try {
+	    Class.forName("org.hsqldb.jdbcDriver");
+	} catch ( ClassNotFoundException cnfe ) { cnfe.printStackTrace(); }
+   
+	hsql = null;
+	try {
+	    hsql = DriverManager.getConnection( "jdbc:hsqldb:file:govauctionsdb", "SA", "" );
+	}
+	catch ( SQLException sqle ) { sqle.printStackTrace(); }
+
+	try {
+	    stmt = hsql.createStatement();
+	    stmt.executeUpdate( "DROP TABLE IF EXISTS auction_records" );
+	    stmt.executeUpdate( "CREATE TABLE auction_records ( website VARCHAR(64), url VARCHAR(256), results_content VARCHAR(512) )" );
+	} catch ( SQLException sqle ) { sqle.printStackTrace(); }
+
+	//driver = new HtmlUnitDriver( com.gargoylesoftware.htmlunit.BrowserVersion.FIREFOX_3_6 );
+	//  driver.setJavascriptEnabled( true );
+	driver = new FirefoxDriver();
+
+	searchState = _searchState;
+	searchString = _searchString;
+
+	responseData = "";
+
+	if ( searchEngineInt == 0 ) {
+	    GovLiquidation();  
+	}
+
+	if ( searchEngineInt == 1 ) {
+	    GSAAuctions();
+	}
+
+	if ( searchEngineInt == 2 ) {
+	    IRSAuctions(); 
+	}
+
+	if ( searchEngineInt == 3 ) {
+	    BidCorp();
+	}
+
+	if ( searchEngineInt == 4 ) {
+	    bid4AssetsII();
+	}
+
+	try {
+	    hsql.close();
+	} 
+	catch ( SQLException sqle ) { sqle.printStackTrace(); }
+
+	return responseData;
+    }
+
+    public static void GovLiquidation() {
+	try {
+	    driver.get( "http://www.govliquidation.com/auction/endecaSearch?Ntt=US_" + searchState + "|" + searchString + "&Ntk=P_Auction_Country_State|P_Lot_Title&Ntx=mode+matchall|mode+matchall&N=0&Nty=1&Ns=P_Lot_Number|0&location=US_" + searchState + "&words=" + searchString + "&cmd=keyword" ); 
+
+	    List<WebElement> trList = driver.findElementsByTagName("tr");
+
+	    for ( WebElement myTr : trList ) {
+		if ( myTr.getAttribute("class").equals("resultsBackground1") || myTr.getAttribute("class").equals("resultsBackground2") ) {
+          
+		    List<WebElement> tdList = myTr.findElements( By.tagName("td") );
+		    if ( tdList.size() > 2 ) {
+			String anchorHref = "http://www.govliquidation.com/";
+			List<WebElement> aList = tdList.get(2).findElements( By.tagName("a") );
+			if ( aList.size() > 0 ) {
+			    for ( WebElement myA : aList ) {
+				if ( myA.getAttribute("class").equals("itemTextLink1") ) {
+				    anchorHref = myA.getAttribute("href");
+				    anchorHref = anchorHref.replaceAll("\"", "" );
+
+				    String resultsContent = myTr.getText().trim();
+				    resultsContent = resultsContent.replaceAll("\"", "'" );
+				    resultsContent = resultsContent.replaceAll("\n", "");        
+
+				    System.out.println( "INSERT INTO auction_records ( website, url, results_content ) VALUES ( 'http://www.govliquidation.com/', '" + anchorHref + "', '" +  resultsContent + "' )" );
+
+				    stmt.executeUpdate( "INSERT INTO auction_records ( website, url, results_content ) VALUES ( 'http://www.govliquidation.com/', '" + anchorHref + "', '" +  resultsContent + "' )" );
+				    responseData += "<b><a href='" + anchorHref + "' target='_blank'>" + myTr.getText().trim() + "</a></b><br>";
+
+				}
+			    }
+			}
+
+             
+		    }
+		}   
+	    }
+
+	}
+	catch ( Exception e ) { e.printStackTrace(); }
+    }
+
+    public static void GSAAuctions() {
+	try {
+	    driver.get( "http://gsaauctions.gov/gsaauctions/gsaauctions/" );
+
+	    List<WebElement> inputList = driver.findElementsById("scSrchDescCtxt");
+	    inputList.get(0).sendKeys( searchString );
+
+	    List<WebElement> inputListII = driver.findElementsByName("SearchCtxt");
+	    inputListII.get(0).click();
+
+	    List<WebElement> divList = driver.findElementsByTagName("div");
+
+	    String anchorHref = "";
+
+	    for ( WebElement myDiv : divList ) {
+		if ( myDiv.getAttribute("class").equals("tr") ) {
+		    responseData += myDiv.getText().trim() + "<br>";
+
+		    List<WebElement> aList = myDiv.findElements( By.tagName("a") );
+		    if ( aList.size() > 0 ) { 
+			anchorHref = aList.get(0).getAttribute("href");
+
+			anchorHref = anchorHref.replaceAll("\"", "" );
+			String resultsContent = myDiv.getText().trim();
+			resultsContent = resultsContent.replaceAll("\"", "" );
+			resultsContent = resultsContent.replaceAll("\n", "");         
+
+			stmt.executeUpdate( "INSERT INTO auction_records ( website, url, results_content ) VALUES ( 'http://gsaauctions.gov/', '" + anchorHref + "', '" + resultsContent + "' )" );
+		    }
+		}
+	    }
+
+	}
+	catch ( Exception e ) { e.printStackTrace(); }
+    }
+
+    public static void IRSAuctions() {
+	try {
+	    driver.get( "http://search.treas.gov/search?q=" + searchString + "&output=xml_no_dtd&sort=date%3AD%3AL%3Ad1&ie=UTF-8&client=auctions&oe=UTF-8&proxystylesheet=auctions&site=Auctions" );
+ 
+	    String anchorHref = "";    
+	    List<WebElement> pList = driver.findElementsByTagName("p");
+	    for ( int i=0; i<pList.size()-1; i++ ) {
+		responseData += pList.get(i).getText().trim() + "<br>";
+
+		List<WebElement> aList = pList.get(i).findElements( By.tagName("a") );
+		if ( aList.size() > 0 ) anchorHref = aList.get(0).getAttribute("href");
+
+		String resultsContent = pList.get(i).getText().trim();
+		resultsContent = resultsContent.replaceAll("\"", "");
+		resultsContent = resultsContent.replaceAll("\n", "");
+
+		stmt.executeUpdate( "INSERT INTO auction_records VALUES ( 'http://search.treas.gov/', '" + anchorHref + "', '" + resultsContent + "' )" );
+	    }
+
+	} catch ( Exception e ) { e.printStackTrace(); }
+    }
+
+    public static void BidCorp() {
+	try {
+	    driver.get( "http://www.bidcorp.com/AuctionDefault.aspx" );
+     
+	    driver.findElementsById("ctl00_ContentPlaceHolder1_txtSearch").get(0).sendKeys( searchString );
+
+	    driver.findElementsById("ctl00_ContentPlaceHolder1_btnSearch").get(0).click();
+
+	    List<WebElement> trList = driver.findElementsByTagName("tr");
+	    for ( WebElement tr : trList ) {
+		if ( tr.getAttribute("style").trim().equals("color: rgb(0, 51, 51); background-color: White; font-size: 14px; text-decoration: none; width: 100%;") || tr.getAttribute("style").trim().equals("color: rgb(0, 51, 51); background-color: rgb(204, 204, 204); font-size: 14px; text-decoration: none; width: 100%;" ) ) {
+		    String anchorHref = "http://www.bidcorp.com/AuctionDefault.aspx";
+
+		    List<WebElement> aList = tr.findElements( By.tagName("a") );
+		    if ( aList.size() > 0 ) {
+			anchorHref = aList.get(0).getAttribute("href");
+		    }
+          
+		    String resultsContent = tr.getText().trim();
+		    resultsContent = resultsContent.replaceAll("\"", "");
+		    resultsContent = resultsContent.replaceAll("\n", "");            
+
+		    responseData += "<b><a href='" + anchorHref + "' target='_blank'>" + tr.getText().trim() + "</a></b><br>";
+		    stmt.executeUpdate( "INSERT INTO auction_records VALUES ( 'http://www.bidcorp.com/', '" + anchorHref + "', '" + resultsContent + "' )" );
+                       
+		}  
+	    }
+	} catch ( Exception e ) { e.printStackTrace(); }
+    }
+
+    public static void bid4Assets() {
+	try {
+	    driver.get( "http://www.bid4assets.com/Search/index.cfm?fuseaction=search" );
+   
+	    driver.findElementsById("cf-search").get(0).sendKeys( searchString );
+
+	    driver.findElementsById("go").get(0).click();
+
+	    List<WebElement> tableList = driver.findElementsByTagName("table");
+	    for ( WebElement tbl : tableList ) {
+		if ( tbl.getAttribute("border").trim().equals("0") && tbl.getAttribute("cellpadding").trim().equals("3") && tbl.getAttribute("cellspacing").trim().equals("0") && tbl.getAttribute("width").trim().equals("100%") ) {
+		    List<WebElement> trList = tbl.findElements( By.tagName("tr") );
+		    // System.out.println( "you are here" );
+		    if ( trList.size() > 2 ) {
+			for ( int i=2; i<trList.size()-1; i++ ) {
+			                    
+			    String anchorHref = "http://www.bid4assets.com/Search/index.cfm?fuseaction=search";
+			    List<WebElement> aList = trList.get(i).findElements( By.tagName("a") );
+			    if ( aList.size() > 0 ) {
+				anchorHref = aList.get(0).getAttribute("href");
+			    }
+ 
+			    responseData += "<b><a href='" + anchorHref + "' target='_blank'>" + trList.get(i).getText().trim() + "</a></b><br>";
+			    String resultsContent = trList.get(i).getText().trim();
+			    resultsContent = resultsContent.replaceAll("\"", "");
+			    resultsContent = resultsContent.replaceAll("\n", "");            
+
+			    stmt.executeUpdate( "INSERT INTO auction_records VALUES ( 'http://www.bid4assets.com/', '" + anchorHref + "', '" + resultsContent + "' )" );
+			}
+		    } 
+		}
+	    }
+
+	} catch ( Exception e ) { e.printStackTrace(); }
+    }
+
+    public static void bid4AssetsII() {
+	try { 
+	    String message = "fuseaction=" + URLEncoder.encode("search") + "&type=" + URLEncoder.encode( "powerSearch" ) + "&criteria=" + URLEncoder.encode( "gold" ) + "&keywordType=" + URLEncoder.encode( "allWords" ) + "&channel=" + URLEncoder.encode("all") + "&cat2=" + URLEncoder.encode("all") + "&cat3=" + URLEncoder.encode("all") + "&LocationChoice=" + URLEncoder.encode("1") + "&locatedState=" + URLEncoder.encode("CA") + "&ZIp=&ZipRadius=" + URLEncoder.encode("1") + "&assetstatus=" + URLEncoder.encode("Live") + "&DateHistory=" + URLEncoder.encode("6") + "&sort=" + URLEncoder.encode("bidCloseTime");
+
+	    URL theUrl = new URL( "http://www.bid4assets.com/search/index.cfm" );
+	    HttpURLConnection connection = (HttpURLConnection) theUrl.openConnection();
+	    connection.setDoOutput( true );
+	    connection.setRequestMethod( "POST" );
+	    connection.setRequestProperty( "Content-Type", "application/x-www-form-urlencoded" );
+
+	    OutputStream writer = connection.getOutputStream();
+	    writer.write( message.getBytes("UTF-8") );
+	    writer.close();
+
+	    BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+	    String line;
+	    String responseContent = "";
+
+	    while ((line = reader.readLine()) != null) {
+		responseContent += line;       
+	    }
+	    reader.close();
+
+	    int startIdx = responseContent.indexOf( "<table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"3\">" );
+	    int endIdx = responseContent.indexOf( "<td align=\"center\" colspan=\"2\" class=\"b4alg3Arial\">" ); 
+
+	    Parser htmlParser = new Parser();
+	    try {
+		htmlParser.setInputHTML( responseContent.substring( startIdx, endIdx ) );
+		NodeList nList = htmlParser.parse( null );
+
+		for ( int i=0; i<nList.size(); i++ ) {
+		    System.out.println( nList.elementAt(i).getText() );
+		}
+
+		if ( nList.size() > 2 ) {
+		    System.out.println( nList.size() );
+		    //Node trList = (nList.elementAt(2)
+
+		    System.out.println( nList.elementAt(4).getText() );
+
+		    /* for ( int i=0; i<trList.size(); i++ ) {
+		                           //  System.out.println( trList.elementAt(i).toPlainTextString() );
+
+					   } */
+
+		}
+       
+	    } catch ( ParserException pe ) { pe.printStackTrace(); }
+
+      
+
+	} catch ( IOException ioe ) { ioe.printStackTrace(); }
+    }
+}

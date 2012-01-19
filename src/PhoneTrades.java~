@@ -1,0 +1,50 @@
+import org.openqa.selenium.firefox.FirefoxDriver;
+import au.com.bytecode.opencsv.CSVWriter;
+import java.io.IOException;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.util.List;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.By;
+
+public class PhoneTrades {
+  public static void main( String[] args ) {
+    try {
+
+     CSVWriter myWriter = new CSVWriter( new FileWriter( "./GovLiquidation.csv" ) );
+     myWriter.writeNext( new String[]{ "Item" } );
+
+     FirefoxDriver driver = new FirefoxDriver();
+
+     String searchString = "valve";
+
+     driver.get( "http://instantsale.ebay.com/" ); 
+
+     List<WebElement> searchInput = driver.findElementsByName("search");
+     searchInput.get(0).sendKeys( "iphone 16gb" );
+     
+     List<WebElement> submitButton = driver.findElementsByXPath("//input[@title='Search Instant Sale']");
+     submitButton.get(0).click();
+
+     List<WebElement> tdList = driver.findElementsByXPath("//td[@class='searchResultsProductInfo']");
+    
+     for ( WebElement td : tdList ) {
+	 myWriter.writeNext( new String[] { td.getText() } );
+     }
+    
+     driver.get( "http://flipswap.com/" );
+    
+     List<WebElement> queryInput = driver.findElementsByName("search-query");
+     queryInput.get(0).clear();
+     queryInput.get(0).sendKeys( "iphone 16gb" );
+     
+     List<WebElement> searchButton = driver.findElementsByXPath("//input[@value='Search']");
+     searchButton.get(0).click();
+
+
+     myWriter.close();
+
+    }
+    catch ( Exception e ) { e.printStackTrace(); }
+  }
+}

@@ -1,0 +1,3 @@
+/*C3*/SET SCHEMA PUBLIC
+DROP TABLE IF EXISTS auction_records
+CREATE TABLE auction_records ( website VARCHAR(64), url VARCHAR(1024), results_content VARCHAR(1536) )

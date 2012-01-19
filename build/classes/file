@@ -1,0 +1,1133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+      
+     
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script src="/autoauctions/a4j/g/3_3_1.GA/org/ajax4jsf/framework.pack.js" type="text/javascript"></script><script src="/autoauctions/a4j/g/3_3_1.GA/org/richfaces/ui.pack.js" type="text/javascript"></script><link class="component" href="/autoauctions/a4j/s/3_3_1.GA/org/richfaces/skin.xcss/DATB/eAF7sqpgb-jyGdIAFrMEaw__;jsessionid=FDF406F6DBB3C38E0ECB2410B666E139" rel="stylesheet" type="text/css" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>autoauctions</title>
+    <link href="stylesheet/theme.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="auctionsalefeed.seam" />
+</head>
+
+
+
+<body><div class="dr-pnl rich-panel " id="j_id2" style="padding:0px; border:0; background-color: #ECF4FE;"><div class="dr-pnl-b rich-panel-body " id="j_id2_body">
+<form id="autoAuctionsFormMenu" name="autoAuctionsFormMenu" method="post" action="/autoauctions/findavehicle.seam;jsessionid=FDF406F6DBB3C38E0ECB2410B666E139" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="autoAuctionsFormMenu" value="autoAuctionsFormMenu" />
+
+		<table cellspacing="0" cellpadding="0" width="100%">
+			<tr style=" height : 55px;background-color:white;">
+				<td align="left"><img src="/autoauctions/img/gsalogo.gif;jsessionid=FDF406F6DBB3C38E0ECB2410B666E139" height="55" /></td>
+				<td align="left"><img alt="" class="rich-spacer " height="1" id="autoAuctionsFormMenu:j_id6" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="15" />
+				</td>
+				<td align="right"><img src="/autoauctions/img/usaflag1.gif;jsessionid=FDF406F6DBB3C38E0ECB2410B666E139" height="60" width="100%" /></td>
+				<td align="right"><img src="/autoauctions/img/usaflag2.gif;jsessionid=FDF406F6DBB3C38E0ECB2410B666E139" height="60" width="100%" /></td>
+			</tr>
+			<tr>
+			<td>
+				</td>
+		</tr>		
+		</table><div id="_viewRoot:status"><div id="_viewRoot:status.start" style="height: 60px; width: 60px; position: absolute; top: 200px; left: 300px;; display: none"><span style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; display: inline-block; height: 26px; width: 26px; margin: auto;"><img src="img/ai.gif;jsessionid=FDF406F6DBB3C38E0ECB2410B666E139" alt="" height="35" width="35" /></span></div><div id="_viewRoot:status.stop"></div></div><table border="0" cellpadding="0" cellspacing="0" class="dr-toolbar-ext rich-toolbar " height="27" id="autoAuctionsFormMenu:menuToolBar" style="padding: 0px; border:0;background-image:url();background-color: #ECF4FE;" width="100%"><tr valign="middle"><td class="dr-toolbar-int rich-toolbar-item  " style=";padding: 0px; border:0;"><img alt="" class="rich-spacer " height="1" id="autoAuctionsFormMenu:j_id16" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="5px" /></td><td class="dr-toolbar-int rich-toolbar-item  " style=";padding: 0px; border:0;"><a href="#" id="autoAuctionsFormMenu:j_id17" name="autoAuctionsFormMenu:j_id17" onclick="A4J.AJAX.Submit('_viewRoot','autoAuctionsFormMenu',event,{'similarityGroupingId':'autoAuctionsFormMenu:j_id17','parameters':{'autoAuctionsFormMenu:j_id17':'autoAuctionsFormMenu:j_id17'} ,'actionUrl':'/autoauctions/findavehicle.seam;jsessionid=FDF406F6DBB3C38E0ECB2410B666E139'} );return false;" style="color:white;text-decoration:none;border-style:none;"><img id="autoAuctionsFormMenu:homr" src="/autoauctions/img/Home.gif;jsessionid=FDF406F6DBB3C38E0ECB2410B666E139" onmouseout="this.src='/autoauctions/img/Home.gif';" onmouseover="this.src='/autoauctions/img/Home_off.gif';" style="border-style:none;border:0;vertical-align: middle;" />
+
+	  		<!-- <h:outputText value="HOME" style="vertical-align: middle"/>  --></a></td><td class="dr-toolbar-int rich-toolbar-item  " style=";padding: 0px; border:0;"><img alt="" class="rich-spacer " height="1" id="autoAuctionsFormMenu:j_id19" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="5px" /></td><td class="dr-toolbar-int rich-toolbar-item  " style=";padding: 0px; border:0;"><img alt="" class="rich-spacer " height="1" id="autoAuctionsFormMenu:j_id21" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="5px" /></td><td class="dr-toolbar-int rich-toolbar-item  " style=";padding: 0px; border:0;"><a href="#" id="autoAuctionsFormMenu:j_id22" name="autoAuctionsFormMenu:j_id22" onclick="A4J.AJAX.Submit('_viewRoot','autoAuctionsFormMenu',event,{'similarityGroupingId':'autoAuctionsFormMenu:j_id22','parameters':{'autoAuctionsFormMenu:j_id22':'autoAuctionsFormMenu:j_id22'} ,'actionUrl':'/autoauctions/findavehicle.seam;jsessionid=FDF406F6DBB3C38E0ECB2410B666E139'} );return false;" style="color:white;text-decoration:none;border-style:none;"><img id="autoAuctionsFormMenu:login" src="/autoauctions/img/login2.gif;jsessionid=FDF406F6DBB3C38E0ECB2410B666E139" onmouseout="this.src='/autoauctions/img/login2.gif';" onmouseover="this.src='/autoauctions/img/login_off.gif';" style="border-style:none;border:0;vertical-align: middle" />
+
+	  		<!-- <h:outputText value="LOGIN" style="vertical-align: middle"/> --></a></td><td class="dr-toolbar-int rich-toolbar-item  " style=";padding: 0px; border:0;"><img alt="" class="rich-spacer " height="1" id="autoAuctionsFormMenu:j_id24" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="5px" /></td><td class="dr-toolbar-int rich-toolbar-item  " style=";padding: 0px; border:0;"><img alt="" class="rich-spacer " height="1" id="autoAuctionsFormMenu:j_id26" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="5px" /></td><td class="dr-toolbar-int rich-toolbar-item  " style=";padding: 0px; border:0;"><a href="#" id="autoAuctionsFormMenu:j_id27" name="autoAuctionsFormMenu:j_id27" onclick="A4J.AJAX.Submit('_viewRoot','autoAuctionsFormMenu',event,{'similarityGroupingId':'autoAuctionsFormMenu:j_id27','parameters':{'autoAuctionsFormMenu:j_id27':'autoAuctionsFormMenu:j_id27'} ,'actionUrl':'/autoauctions/findavehicle.seam;jsessionid=FDF406F6DBB3C38E0ECB2410B666E139'} );return false;" style="color:white;text-decoration:none;"><img id="autoAuctionsFormMenu:calendar" src="/autoauctions/img/Calendar.gif;jsessionid=FDF406F6DBB3C38E0ECB2410B666E139" onmouseout="this.src='/autoauctions/img/Calendar.gif';" onmouseover="this.src='/autoauctions/img/Calendar_off.gif';" style="border-style:none;border:0;vertical-align: middle" />
+			
+	  		<!-- <h:outputText value="CALENDAR" />	--></a></td><td class="dr-toolbar-int rich-toolbar-item  " style=";padding: 0px; border:0;"><img alt="" class="rich-spacer " height="1" id="autoAuctionsFormMenu:j_id29" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="5px" /></td><td class="dr-toolbar-int rich-toolbar-item  " style=";padding: 0px; border:0;"><img alt="" class="rich-spacer " height="1" id="autoAuctionsFormMenu:j_id31" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="5px" /></td><td class="dr-toolbar-int rich-toolbar-item  " style=";padding: 0px; border:0;"><a href="#" id="autoAuctionsFormMenu:j_id32" name="autoAuctionsFormMenu:j_id32" onclick="A4J.AJAX.Submit('_viewRoot','autoAuctionsFormMenu',event,{'similarityGroupingId':'autoAuctionsFormMenu:j_id32','parameters':{'autoAuctionsFormMenu:j_id32':'autoAuctionsFormMenu:j_id32'} ,'actionUrl':'/autoauctions/findavehicle.seam;jsessionid=FDF406F6DBB3C38E0ECB2410B666E139'} );return false;" style="color:white;text-decoration:none;border-style:none;"><img id="autoAuctionsFormMenu:findavehicle" src="/autoauctions/img/FindVehicle.gif;jsessionid=FDF406F6DBB3C38E0ECB2410B666E139" onmouseout="this.src='/autoauctions/img/FindVehicle.gif';" onmouseover="this.src='/autoauctions/img/FindVehicle_off.gif';" style="border-style:none;border:0;vertical-align: middle" />
+			
+	  		<!-- <h:outputText value="FIND A VEHICLE" />--></a></td><td class="dr-toolbar-int rich-toolbar-item  " style=";padding: 0px; border:0;"><img alt="" class="rich-spacer " height="1" id="autoAuctionsFormMenu:j_id34" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="5px" /></td><td class="dr-toolbar-int rich-toolbar-item  " style=";padding: 0px; border:0;"><img alt="" class="rich-spacer " height="1" id="autoAuctionsFormMenu:j_id36" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="5px" /></td><td class="dr-toolbar-int rich-toolbar-item  " style=";padding: 0px; border:0;"><a href="#" id="autoAuctionsFormMenu:j_id37" name="autoAuctionsFormMenu:j_id37" onclick="A4J.AJAX.Submit('_viewRoot','autoAuctionsFormMenu',event,{'similarityGroupingId':'autoAuctionsFormMenu:j_id37','parameters':{'autoAuctionsFormMenu:j_id37':'autoAuctionsFormMenu:j_id37'} ,'actionUrl':'/autoauctions/findavehicle.seam;jsessionid=FDF406F6DBB3C38E0ECB2410B666E139'} );return false;" style="color:white;text-decoration:none;border-style:none;"><img id="autoAuctionsFormMenu:auctionsearch" src="/autoauctions/img/Search.gif;jsessionid=FDF406F6DBB3C38E0ECB2410B666E139" onmouseout="this.src='/autoauctions/img/Search.gif';" onmouseover="this.src='/autoauctions/img/Search_off.gif';" style="border-style:none;border:0;vertical-align: middle" />
+	  		
+	  	<!-- 	<h:outputText value="AUCTION SEARCH" />--></a></td><td class="dr-toolbar-int rich-toolbar-item  " style=";padding: 0px; border:0;"><img alt="" class="rich-spacer " height="1" id="autoAuctionsFormMenu:j_id39" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="5px" /></td><td class="dr-toolbar-int rich-toolbar-item  " style=";padding: 0px; border:0;"><img alt="" class="rich-spacer " height="1" id="autoAuctionsFormMenu:j_id41" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="5px" /></td><td class="dr-toolbar-int rich-toolbar-item  " style=";padding: 0px; border:0;"><a href="#" id="autoAuctionsFormMenu:j_id42" name="autoAuctionsFormMenu:j_id42" onclick="A4J.AJAX.Submit('_viewRoot','autoAuctionsFormMenu',event,{'similarityGroupingId':'autoAuctionsFormMenu:j_id42','parameters':{'autoAuctionsFormMenu:j_id42':'autoAuctionsFormMenu:j_id42'} ,'actionUrl':'/autoauctions/findavehicle.seam;jsessionid=FDF406F6DBB3C38E0ECB2410B666E139'} );return false;" style="color:white;text-decoration:none;border-style:none;"><img id="autoAuctionsFormMenu:faq" src="/autoauctions/img/FAQ.gif;jsessionid=FDF406F6DBB3C38E0ECB2410B666E139" onmouseout="this.src='/autoauctions/img/FAQ.gif';" onmouseover="this.src='/autoauctions/img/FAQ_off.gif';" style="border-style:none;border:0;vertical-align: middle" />
+	  		
+	  		<!-- <h:outputText value="FAQ" />--></a></td><td class="dr-toolbar-int rich-toolbar-item  " style=";padding: 0px; border:0;"><img alt="" class="rich-spacer " height="1" id="autoAuctionsFormMenu:j_id44" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="5px" /></td><td class="dr-toolbar-int rich-toolbar-item  " style=";padding: 1px; border:1;background-color: #ECF4FE;"><input id="autoAuctionsFormMenu:searchBox" type="text" name="autoAuctionsFormMenu:searchBox" value="" size="40" style="height:21px;font-size:15px; width : 149px;" /></td><td class="dr-toolbar-int rich-toolbar-item  " style=";padding: 1px; border:1;background-color: #ECF4FE;"><img alt="" class="rich-spacer " height="1" id="autoAuctionsFormMenu:j_id46" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="5px" /></td><td class="dr-toolbar-int rich-toolbar-item  " style=";padding: 1px; border:1;background-color: #ECF4FE;"><input id="autoAuctionsFormMenu:searchButton" name="autoAuctionsFormMenu:searchButton" onclick="A4J.AJAX.Submit('_viewRoot','autoAuctionsFormMenu',event,{'similarityGroupingId':'autoAuctionsFormMenu:searchButton','parameters':{'autoAuctionsFormMenu:searchButton':'autoAuctionsFormMenu:searchButton'} ,'actionUrl':'/autoauctions/findavehicle.seam;jsessionid=FDF406F6DBB3C38E0ECB2410B666E139'} );return false;" value="Search" style=" width : 68px;" type="image" src="/autoauctions/img/tssearch.gif;jsessionid=FDF406F6DBB3C38E0ECB2410B666E139" alt="Search" /></td><td class="dr-toolbar-int rich-toolbar-item  " style=";padding: 1px; border:1;background-color: #ECF4FE;"><img alt="" class="rich-spacer " height="1" id="autoAuctionsFormMenu:j_id47" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="5px" /></td><td class="dr-toolbar-int rich-toolbar-item  " style=";padding: 1px; border:1;background-color: #ECF4FE;"><div id="autoAuctionsFormMenu:suggestion" class="dr-sb-common-container rich-sb-common-container  " style="display:none; z-index: 201;width:200px;height:200px;;;"><div class="dr-sb-ext-decor-1 rich-sb-ext-decor-1"><div class="dr-sb-ext-decor-2 rich-sb-ext-decor-2" style=";; border-width: null  null  null  null ;"><table border="0" cellpadding="0" cellspacing="1" class="dr-sb-ext-decor-3 rich-sb-ext-decor-3"><tbody><tr><td><div class="_suggestion_size_ dr-sb-overflow rich-sb-overflow" style="width:196px;height:196px;"><table width="100%" id="autoAuctionsFormMenu:suggestion:suggest" border="0"><tbody></tbody></table></div></td></tr></tbody></table></div></div><div class="dr-sb-shadow rich-sb-shadow" style="opacity:0.1; filter:alpha(opacity=10);top: 4px; left: 4px; "></div></div><div id="autoAuctionsFormMenu:suggestion_script" style="display:none;"><script type="text/javascript">Richfaces.onAvailable('autoAuctionsFormMenu:searchBox', function() { new RichFaces.Suggestion('_viewRoot','autoAuctionsFormMenu','autoAuctionsFormMenu:searchBox','autoAuctionsFormMenu:suggestion',null,{'implicitEventsQueue':'autoAuctionsFormMenu:suggestion','usingSuggestObjects':false,'param':'inputvalue','width':'200','entryClass':'richfaces_suggestionEntry','rows':0,'popupStyle':'','height':'200','popupClass':'','popup':'autoAuctionsFormMenu:suggestion','parameters':{'autoAuctionsFormMenu:suggestion':'autoAuctionsFormMenu:suggestion','ajaxSingle':'autoAuctionsFormMenu:suggestion'} ,'similarityGroupingId':'autoAuctionsFormMenu:suggestion','selectValueClass':'richfaces_suggestionSelectValue','zindex':200,'actionUrl':'/autoauctions/findavehicle.seam;jsessionid=FDF406F6DBB3C38E0ECB2410B666E139'} );
+});</script></div><iframe src="/autoauctions/a4j/g/3_3_1.GAorg/richfaces/renderkit/html/images/spacer.gif" id="autoAuctionsFormMenu:suggestion_iframe" style="position:absolute;display:none;z-index:200;"></iframe><input type="hidden" id="autoAuctionsFormMenu:suggestion_selection" name="autoAuctionsFormMenu:suggestion_selection" /></td><td style="width:100%"></td><td class="dr-toolbar-int rich-toolbar-item  " style=";padding: 0px; border:0;background-color: #ECF4FE;"><a id="autoAuctionsFormMenu:rssButton" name="autoAuctionsFormMenu:rssButton" href="/autoauctions/auctionsalefeed.seam;jsessionid=FDF406F6DBB3C38E0ECB2410B666E139" target="_new"><img src="/autoauctions/img/rss_button.gif;jsessionid=FDF406F6DBB3C38E0ECB2410B666E139" style="border-style:none;margin:0;" /><span class="dr-rich-tool-tip rich-tool-tip " id="autoAuctionsFormMenu:j_id51" style="z-index:99; "><span id="autoAuctionsFormMenu:j_id51content">Really Simple Syndication</span><span id="autoAuctionsFormMenu:j_id51script" style="display:none"><script type="text/javascript" id ="scriptautoAuctionsFormMenu:j_id51">
+new ToolTip({'delay':0,'showEvent':'mouseover','hideDelay':0,'hideEvent':''} ,{'oncomplete':null,'onhide':null,'onshow':null} ,"autoAuctionsFormMenu:j_id51","autoAuctionsFormMenu:rssButton","client",false,"bottom-right",false,10,10,null,{'control':this,'oncomplete':function(request,event,data){;{var _toolTip = $('autoAuctionsFormMenu:j_id51').component;_toolTip.toolTipContent = $('autoAuctionsFormMenu:j_id51content');_toolTip.displayDiv();}},'similarityGroupingId':'autoAuctionsFormMenu:j_id51','parameters':{'autoAuctionsFormMenu:j_id51':'autoAuctionsFormMenu:j_id51','ajaxSingle':'autoAuctionsFormMenu:j_id51'} ,'onbeforedomupdate':function(request,showEvent,data){;{ var _toolTip = $('autoAuctionsFormMenu:j_id51').component;_toolTip.toolTip.style.display = 'none'; }},'actionUrl':'/autoauctions/findavehicle.seam;jsessionid=FDF406F6DBB3C38E0ECB2410B666E139'} );;
+
+</script></span></span></a></td></tr></table>
+		<!-- 
+			<ui:include src="menuModal.xhtml">
+		        
+		    </ui:include> --><span id="autoAuctionsFormMenu:j_id53"></span><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="j_id1" autocomplete="off" />
+</form>
+		<hr color="#FFCC00" />
+		
+	<table cellspacing="0" cellpadding="0" width="100%">
+		<tr width="100%">
+			<td width="100%">
+
+			<div class="body" style="padding: 0px; border: 0">    
+    <style>	
+	.treeLink { 
+		text-decoration:none; 
+		color:black; 
+	}
+    .rich-panel-header {
+        color:#0054BD;
+    }
+    .panel {
+        vertical-align:top;
+    }
+    .top {
+        width:200px;height:100px;
+    }
+    .head2 {
+        background-image : url();
+        background-color : #4C9600;
+        height:18px;
+        text-align:center;
+        vertical-align:middle;
+        color:#CFF;
+        padding:0px 0;
+    }    
+    .body3 {
+        height:100px;
+        overflow:auto;
+    }	
+    .stphClass1 {
+		background-color: blue;
+		height: 20px;
+	}
+	
+
+	</style>
+	<script>
+		function disableRefresh()
+		{
+			alert(event.keyCode);
+			if ((event.keyCode == 116) || (event.keyCode == F5)) 
+			{ 
+				event.keyCode = 0; 
+				event.cancelBubble = true; 
+				return false; 
+			}		
+		}
+	</script><span id="selectVehicleReg:status"><span id="selectVehicleReg:status.start" style="display: none"></span><script type="text/javascript">
+window.document.getElementById('selectVehicleReg:status.start').onstart=function(){document.getElementById('wait').component.show();};
+</script><span id="selectVehicleReg:status.stop"></span><script type="text/javascript">
+window.document.getElementById('selectVehicleReg:status.stop').onstop=function(){document.getElementById('wait').component.hide();};
+</script></span><img alt="" class="rich-spacer " height="1" id="j_id59" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="10px" /><span style="color: dark-blue; text-align: center; font-size: 14px; font-weight: bold;">Find Vehicle</span><table border="0">
+<tbody>
+<tr>
+<td class="panel">
+<form id="selCriteria" name="selCriteria" method="post" action="/autoauctions/findavehicle.seam;jsessionid=FDF406F6DBB3C38E0ECB2410B666E139" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="selCriteria" value="selCriteria" />
+<div class="dr-pnl rich-panel " id="selCriteria:searchPanel" style="padding: 0px; vertical-align:top;"><div class="dr-pnl-h rich-panel-header " id="selCriteria:searchPanel_header"><span style="font-size: 12px; font-weight: bold;">Selection Criteria</span></div><div class="dr-pnl-b rich-panel-body " id="selCriteria:searchPanel_body"><div class="dr-stglpnl rich-stglpanel " id="selCriteria:statePanel" style="width: ; border:1; padding: 0px;;" onclick="javascript:Richfaces.showModalPanel('modalStatePanel');"><script type="text/javascript">SimpleTogglePanelManager.add(new SimpleTogglePanel("selCriteria:statePanel", 
+            													"false",{onexpand: '',oncollapse: ''}
+            													
+            							 ));</script><div class="dr-stglpnl-h rich-stglpanel-header stphClass1" id="selCriteria:statePanel_header" onclick="SimpleTogglePanelManager.toggleOnClient(event,'selCriteria:statePanel');"><div class="dr-stglpanel-marker rich-stglpanel-marker"><div class="dr-stglpnl-m rich-stglpnl-marker" id="selCriteria:statePanel_switch_on" style="display: none;">&#171;</div><div class="dr-stglpnl-m rich-stglpnl-marker" id="selCriteria:statePanel_switch_off" style="display: ;">&#187;</div></div>States&#160;</div><div style="display: none;"><input id="selCriteria:statePanel_input" name="selCriteria:statePanel" type="hidden" /></div><div class="dr-stglpnl-b rich-stglpanel-body " id="selCriteria:statePanel_body" style="display : none;              height: ;"><table>
+</table>            						
+	           				<br /></div></div><div class="dr-stglpnl rich-stglpanel " id="selCriteria:housePanel" style="width: ; border:1; padding: 0px;;" onclick="javascript:Richfaces.showModalPanel('modalHousePanel');"><script type="text/javascript">SimpleTogglePanelManager.add(new SimpleTogglePanel("selCriteria:housePanel", 
+            													"false",{onexpand: '',oncollapse: ''}
+            													
+            							 ));</script><div class="dr-stglpnl-h rich-stglpanel-header stphClass1" id="selCriteria:housePanel_header" onclick="SimpleTogglePanelManager.toggleOnClient(event,'selCriteria:housePanel');"><div class="dr-stglpanel-marker rich-stglpanel-marker"><div class="dr-stglpnl-m rich-stglpnl-marker" id="selCriteria:housePanel_switch_on" style="display: none;">&#171;</div><div class="dr-stglpnl-m rich-stglpnl-marker" id="selCriteria:housePanel_switch_off" style="display: ;">&#187;</div></div>Auction Houses&#160;</div><div style="display: none;"><input id="selCriteria:housePanel_input" name="selCriteria:housePanel" type="hidden" /></div><div class="dr-stglpnl-b rich-stglpanel-body " id="selCriteria:housePanel_body" style="display : none;              height: ;"><table>
+</table>            						
+		           			<br /></div></div><div class="dr-stglpnl rich-stglpanel " id="selCriteria:makePanel" style="width: ; border:1; padding: 0px;;" onclick="javascript:Richfaces.showModalPanel('modalMakePanel');"><script type="text/javascript">SimpleTogglePanelManager.add(new SimpleTogglePanel("selCriteria:makePanel", 
+            													"false",{onexpand: '',oncollapse: ''}
+            													
+            							 ));</script><div class="dr-stglpnl-h rich-stglpanel-header stphClass1" id="selCriteria:makePanel_header" onclick="SimpleTogglePanelManager.toggleOnClient(event,'selCriteria:makePanel');"><div class="dr-stglpanel-marker rich-stglpanel-marker"><div class="dr-stglpnl-m rich-stglpnl-marker" id="selCriteria:makePanel_switch_on" style="display: none;">&#171;</div><div class="dr-stglpnl-m rich-stglpnl-marker" id="selCriteria:makePanel_switch_off" style="display: ;">&#187;</div></div>Make&#160;</div><div style="display: none;"><input id="selCriteria:makePanel_input" name="selCriteria:makePanel" type="hidden" /></div><div class="dr-stglpnl-b rich-stglpanel-body " id="selCriteria:makePanel_body" style="display : none;              height: ;"><table>
+</table>            						
+		           			<br /></div></div><div class="dr-stglpnl rich-stglpanel " id="selCriteria:modelPanel" style="width: ; border:1; padding: 0px;;" onclick="javascript:Richfaces.showModalPanel('modalModelPanel');"><script type="text/javascript">SimpleTogglePanelManager.add(new SimpleTogglePanel("selCriteria:modelPanel", 
+            													"false",{onexpand: '',oncollapse: ''}
+            													
+            							 ));</script><div class="dr-stglpnl-h rich-stglpanel-header stphClass1" id="selCriteria:modelPanel_header" onclick="SimpleTogglePanelManager.toggleOnClient(event,'selCriteria:modelPanel');"><div class="dr-stglpanel-marker rich-stglpanel-marker"><div class="dr-stglpnl-m rich-stglpnl-marker" id="selCriteria:modelPanel_switch_on" style="display: none;">&#171;</div><div class="dr-stglpnl-m rich-stglpnl-marker" id="selCriteria:modelPanel_switch_off" style="display: ;">&#187;</div></div>Model&#160;</div><div style="display: none;"><input id="selCriteria:modelPanel_input" name="selCriteria:modelPanel" type="hidden" /></div><div class="dr-stglpnl-b rich-stglpanel-body " id="selCriteria:modelPanel_body" style="display : none;              height: ;"><table>
+</table>            						
+		           			<br /><a href="#" id="selCriteria:j_id87" name="selCriteria:j_id87" onclick="A4J.AJAX.Submit('selectVehicleReg','selCriteria',event,{'oncomplete':function(request,event,data){javascript:Richfaces.showModalPanel('modalModelPanel');},'similarityGroupingId':'selCriteria:j_id87','parameters':{'selCriteria:j_id87':'selCriteria:j_id87'} ,'actionUrl':'/autoauctions/findavehicle.seam;jsessionid=FDF406F6DBB3C38E0ECB2410B666E139'} );return false;"></a>Select Make</div></div><div class="dr-stglpnl rich-stglpanel " id="selCriteria:typePanel" style="width: ; border:1; padding: 0px;;" onclick="javascript:Richfaces.showModalPanel('modalTypePanel');"><script type="text/javascript">SimpleTogglePanelManager.add(new SimpleTogglePanel("selCriteria:typePanel", 
+            													"false",{onexpand: '',oncollapse: ''}
+            													
+            							 ));</script><div class="dr-stglpnl-h rich-stglpanel-header stphClass1" id="selCriteria:typePanel_header" onclick="SimpleTogglePanelManager.toggleOnClient(event,'selCriteria:typePanel');"><div class="dr-stglpanel-marker rich-stglpanel-marker"><div class="dr-stglpnl-m rich-stglpnl-marker" id="selCriteria:typePanel_switch_on" style="display: none;">&#171;</div><div class="dr-stglpnl-m rich-stglpnl-marker" id="selCriteria:typePanel_switch_off" style="display: ;">&#187;</div></div>Vehicle Type&#160;</div><div style="display: none;"><input id="selCriteria:typePanel_input" name="selCriteria:typePanel" type="hidden" /></div><div class="dr-stglpnl-b rich-stglpanel-body " id="selCriteria:typePanel_body" style="display : none;              height: ;"><table>
+</table>            						
+		           			<br /><a href="#" id="selCriteria:j_id94" name="selCriteria:j_id94" onclick="A4J.AJAX.Submit('selectVehicleReg','selCriteria',event,{'oncomplete':function(request,event,data){javascript:Richfaces.showModalPanel('modalTypePanel');},'similarityGroupingId':'selCriteria:j_id94','parameters':{'selCriteria:j_id94':'selCriteria:j_id94'} ,'actionUrl':'/autoauctions/findavehicle.seam;jsessionid=FDF406F6DBB3C38E0ECB2410B666E139'} );return false;"></a></div></div><div class="dr-stglpnl rich-stglpanel " id="selCriteria:fuelPanel" style="width: ; border:1; padding: 0px;;" onclick="javascript:Richfaces.showModalPanel('modalFuelPanel');"><script type="text/javascript">SimpleTogglePanelManager.add(new SimpleTogglePanel("selCriteria:fuelPanel", 
+            													"false",{onexpand: '',oncollapse: ''}
+            													
+            							 ));</script><div class="dr-stglpnl-h rich-stglpanel-header stphClass1" id="selCriteria:fuelPanel_header" onclick="SimpleTogglePanelManager.toggleOnClient(event,'selCriteria:fuelPanel');"><div class="dr-stglpanel-marker rich-stglpanel-marker"><div class="dr-stglpnl-m rich-stglpnl-marker" id="selCriteria:fuelPanel_switch_on" style="display: none;">&#171;</div><div class="dr-stglpnl-m rich-stglpnl-marker" id="selCriteria:fuelPanel_switch_off" style="display: ;">&#187;</div></div>Fuel Type&#160;</div><div style="display: none;"><input id="selCriteria:fuelPanel_input" name="selCriteria:fuelPanel" type="hidden" /></div><div class="dr-stglpnl-b rich-stglpanel-body " id="selCriteria:fuelPanel_body" style="display : none;              height: ;"><table>
+</table>            						
+		           			<br /><a href="#" id="selCriteria:j_id100" name="selCriteria:j_id100" onclick="A4J.AJAX.Submit('selectVehicleReg','selCriteria',event,{'oncomplete':function(request,event,data){javascript:Richfaces.showModalPanel('modalFuelPanel');},'similarityGroupingId':'selCriteria:j_id100','parameters':{'selCriteria:j_id100':'selCriteria:j_id100'} ,'actionUrl':'/autoauctions/findavehicle.seam;jsessionid=FDF406F6DBB3C38E0ECB2410B666E139'} );return false;"></a></div></div><div class="dr-stglpnl rich-stglpanel " id="selCriteria:j_id102" style="width: ; border:1; padding: 0px;;"><script type="text/javascript">SimpleTogglePanelManager.add(new SimpleTogglePanel("selCriteria:j_id102", 
+            													"false",{onexpand: '',oncollapse: ''}
+            													
+            							 ));</script><div class="dr-stglpnl-h rich-stglpanel-header stphClass1" id="selCriteria:j_id102_header" onclick="SimpleTogglePanelManager.toggleOnClient(event,'selCriteria:j_id102');"><div class="dr-stglpanel-marker rich-stglpanel-marker"><div class="dr-stglpnl-m rich-stglpnl-marker" id="selCriteria:j_id102_switch_on" style="display: none;">&#171;</div><div class="dr-stglpnl-m rich-stglpnl-marker" id="selCriteria:j_id102_switch_off" style="display: ;">&#187;</div></div>Sale Type&#160;</div><div style="display: none;"><input id="selCriteria:j_id102_input" name="selCriteria:j_id102" type="hidden" /></div><div class="dr-stglpnl-b rich-stglpanel-body " id="selCriteria:j_id102_body" style="display : none;              height: ;"><table>
+	<tr>
+<td>
+<input name="selCriteria:j_id103" id="selCriteria:j_id103:0" value="-284332538" type="checkbox" onclick="A4J.AJAX.Submit('selectVehicleReg','selCriteria',event,{'similarityGroupingId':'selCriteria:j_id105','parameters':{'selCriteria:j_id105':'selCriteria:j_id105'} ,'actionUrl':'/autoauctions/findavehicle.seam;jsessionid=FDF406F6DBB3C38E0ECB2410B666E139'} )" /><label for="selCriteria:j_id103:0"> Live (3056)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="selCriteria:j_id103" id="selCriteria:j_id103:1" value="1147649672" type="checkbox" onclick="A4J.AJAX.Submit('selectVehicleReg','selCriteria',event,{'similarityGroupingId':'selCriteria:j_id105','parameters':{'selCriteria:j_id105':'selCriteria:j_id105'} ,'actionUrl':'/autoauctions/findavehicle.seam;jsessionid=FDF406F6DBB3C38E0ECB2410B666E139'} )" /><label for="selCriteria:j_id103:1"> Online (7)</label></td>
+	</tr>
+</table>            						
+		           			<br /></div></div><input type="submit" name="selCriteria:j_id108" value="Search" /><img alt="" class="rich-spacer " height="10" id="selCriteria:j_id109" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="5" /><input type="submit" name="selCriteria:j_id110" value="Search All" /><img alt="" class="rich-spacer " height="10" id="selCriteria:j_id111" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="5" /><input type="submit" name="selCriteria:j_id112" value="Reset" /></div></div><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="j_id1" autocomplete="off" />
+</form></td>
+<td>
+				<div align="center">
+<form id="graphicImage" name="graphicImage" method="post" action="/autoauctions/findavehicle.seam;jsessionid=FDF406F6DBB3C38E0ECB2410B666E139" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="graphicImage" value="graphicImage" />
+<input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="j_id1" autocomplete="off" />
+</form>
+				</div></td>
+</tr>
+</tbody>
+</table>
+<div id="modalStatePanel" style="display: none;"><input id="modalStatePanelOpenedState" name="modalStatePanelOpenedState" type="hidden" /><div class="rich-modalpanel " id="modalStatePanelContainer" style="position: absolute; display: none; z-index: 100; background-color: inherit;"><div class="dr-mpnl-mask-div dr-mpnl-mask-div-opaque rich-mpnl-mask-div" id="modalStatePanelDiv" style="z-index: 1;"><button class="dr-mpnl-pnl-button" id="modalStatePanelFirstHref"></button></div><div class="dr-mpnl-panel rich-mpnl_panel"><div class="rich-mp-container" id="modalStatePanelCDiv" style="position: absolute; left: 0px; top: 0px; z-index: 9;"><div class="dr-mpnl-shadow rich-mpnl-shadow" id="modalStatePanelShadowDiv"></div><div class="dr-mpnl-ovf-hd dr-mpnl-trim dr-mpnl-pnl rich-mp-content" id="modalStatePanelContentDiv"><table border="0" cellpadding="0" cellspacing="0" class="rich-mp-content-table" id="modalStatePanelContentTable" style="height: 100%; width: 100%;"><tr style="height: 1%;"><td class="dr-mpnl-header rich-mpnl-header-cell"><div class="dr-mpnl-pnl-text dr-mpnl-pnl-h rich-mpnl-text rich-mpnl-header " id="modalStatePanelHeader" style="white-space: nowrap;">Vehicle Search Modal Panel</div></td></tr><tr style="height: 99%"><td class="dr-mpnl-pnl-b rich-mpnl-body" valign="top">
+<!--    <f:facet name="controls">
+			<span style="cursor:pointer" onclick="javascript:Richfaces.hideModalPanel('modalStatePanel'); SimpleTogglePanelManager.toggleOnClient(onclick,'selCriteria:statePanel');">X</span>
+		</f:facet>		-->
+		<div class="content">
+<form id="modalStateForm" name="modalStateForm" method="post" action="/autoauctions/findavehicle.seam;jsessionid=FDF406F6DBB3C38E0ECB2410B666E139" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="modalStateForm" value="modalStateForm" />
+<table style="text-align:left; vertical-align= top;">
+<tbody>
+<tr>
+<td><table>
+	<tr>
+<td>
+<input name="modalStateForm:j_id350" id="modalStateForm:j_id350:0" value="-705499406" type="checkbox" /><label for="modalStateForm:j_id350:0"> AZ(197)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="modalStateForm:j_id350" id="modalStateForm:j_id350:1" value="-2038200662" type="checkbox" /><label for="modalStateForm:j_id350:1"> CA(193)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="modalStateForm:j_id350" id="modalStateForm:j_id350:2" value="625953718" type="checkbox" /><label for="modalStateForm:j_id350:2"> CO(93)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="modalStateForm:j_id350" id="modalStateForm:j_id350:3" value="-1328676346" type="checkbox" /><label for="modalStateForm:j_id350:3"> IL(134)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="modalStateForm:j_id350" id="modalStateForm:j_id350:4" value="1936776172" type="checkbox" /><label for="modalStateForm:j_id350:4"> LA(69)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="modalStateForm:j_id350" id="modalStateForm:j_id350:5" value="-146940574" type="checkbox" /><label for="modalStateForm:j_id350:5"> MA(43)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="modalStateForm:j_id350" id="modalStateForm:j_id350:6" value="1260255486" type="checkbox" /><label for="modalStateForm:j_id350:6"> MD(345)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="modalStateForm:j_id350" id="modalStateForm:j_id350:7" value="-1100280862" type="checkbox" /><label for="modalStateForm:j_id350:7"> MI(47)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="modalStateForm:j_id350" id="modalStateForm:j_id350:8" value="-580489184" type="checkbox" /><label for="modalStateForm:j_id350:8"> MN(66)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="modalStateForm:j_id350" id="modalStateForm:j_id350:9" value="1964240970" type="checkbox" /><label for="modalStateForm:j_id350:9"> MS(157)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="modalStateForm:j_id350" id="modalStateForm:j_id350:10" value="1012823416" type="checkbox" /><label for="modalStateForm:j_id350:10"> MT(85)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="modalStateForm:j_id350" id="modalStateForm:j_id350:11" value="2015533826" type="checkbox" /><label for="modalStateForm:j_id350:11"> NC(168)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="modalStateForm:j_id350" id="modalStateForm:j_id350:12" value="1158869438" type="checkbox" /><label for="modalStateForm:j_id350:12"> NJ(138)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="modalStateForm:j_id350" id="modalStateForm:j_id350:13" value="866020308" type="checkbox" /><label for="modalStateForm:j_id350:13"> NM(75)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="modalStateForm:j_id350" id="modalStateForm:j_id350:14" value="-1621474494" type="checkbox" /><label for="modalStateForm:j_id350:14"> OH(171)</label></td>
+	</tr>
+</table></td>
+<td><img alt="" class="rich-spacer " height="1" id="modalStateForm:j_id353" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="40px" /></td>
+<td><table>
+	<tr>
+<td>
+<input name="modalStateForm:j_id355" id="modalStateForm:j_id355:0" value="-1369564806" type="checkbox" /><label for="modalStateForm:j_id355:0"> OK(157)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="modalStateForm:j_id355" id="modalStateForm:j_id355:1" value="-1022665724" type="checkbox" /><label for="modalStateForm:j_id355:1"> PA(36)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="modalStateForm:j_id355" id="modalStateForm:j_id355:2" value="624866922" type="checkbox" /><label for="modalStateForm:j_id355:2"> SC(197)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="modalStateForm:j_id355" id="modalStateForm:j_id355:3" value="-579398934" type="checkbox" /><label for="modalStateForm:j_id355:3"> TN(179)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="modalStateForm:j_id355" id="modalStateForm:j_id355:4" value="-1888400150" type="checkbox" /><label for="modalStateForm:j_id355:4"> TX(304)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="modalStateForm:j_id355" id="modalStateForm:j_id355:5" value="-855158852" type="checkbox" /><label for="modalStateForm:j_id355:5"> UT(73)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="modalStateForm:j_id355" id="modalStateForm:j_id355:6" value="1508234532" type="checkbox" /><label for="modalStateForm:j_id355:6"> VA(66)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="modalStateForm:j_id355" id="modalStateForm:j_id355:7" value="918125048" type="checkbox" /><label for="modalStateForm:j_id355:7"> WV(70)</label></td>
+	</tr>
+</table></td>
+<td><img alt="" class="rich-spacer " height="1" id="modalStateForm:j_id358" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="40px" /></td>
+<td><table>
+</table></td>
+</tr>
+</tbody>
+</table>
+<input type="submit" name="modalStateForm:j_id363" value="Submit" /><input type="submit" name="modalStateForm:j_id364" value="Select All" /><input type="submit" name="modalStateForm:j_id365" value="Close" /><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="j_id1" autocomplete="off" />
+</form>
+        </div></td></tr></table></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalStatePanelResizerN" style="width: 40px; height: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalStatePanelResizerE" style="height: 40px; width: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalStatePanelResizerS" style="width: 40px; height: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalStatePanelResizerW" style="height: 40px; width: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalStatePanelResizerNWU" style="width: 40px; height: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalStatePanelResizerNEU" style="height: 40px; width: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalStatePanelResizerNEL" style="width: 40px; height: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalStatePanelResizerSEU" style="height: 40px; width: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalStatePanelResizerSEL" style="width: 40px; height: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalStatePanelResizerSWL" style="height: 40px; width: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalStatePanelResizerSWU" style="width: 40px; height: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalStatePanelResizerNWL" style="height: 40px; width: 4px;"></div></div></div><div class="dr-mpnl-mask-div dr-mpnl-mask-div-transparent rich-mpnl-mask-div" id="modalStatePanelCursorDiv" style="z-index: -200;"><button class="dr-mpnl-pnl-button" id="modalStatePanelLastHref"></button></div><script type="text/javascript">new ModalPanel('modalStatePanel',
+				{
+					width: 400,
+					height: 480,
+
+					minWidth: -1,
+					minHeight: -1,
+
+					resizeable: true,
+					moveable: true,
+
+					left: "auto",
+					top: "auto",
+
+					zindex: 100,onresize: '',onmove: '',onshow: '',onhide: '',onbeforeshow: '',onbeforehide: '',
+					domElementAttachment: "",				
+					keepVisualState: false,
+					showWhenRendered: false,
+					selectBehavior: "disable",
+
+					autosized: false,
+					overlapEmbedObjects: false});</script></div><script type="text/javascript"></script></div><div id="modalHousePanel" style="display: none;"><input id="modalHousePanelOpenedState" name="modalHousePanelOpenedState" type="hidden" /><div class="rich-modalpanel " id="modalHousePanelContainer" style="position: absolute; display: none; z-index: 100; background-color: inherit;"><div class="dr-mpnl-mask-div dr-mpnl-mask-div-opaque rich-mpnl-mask-div" id="modalHousePanelDiv" style="z-index: 1;"><button class="dr-mpnl-pnl-button" id="modalHousePanelFirstHref"></button></div><div class="dr-mpnl-panel rich-mpnl_panel"><div class="rich-mp-container" id="modalHousePanelCDiv" style="position: absolute; left: 0px; top: 0px; z-index: 9;"><div class="dr-mpnl-shadow rich-mpnl-shadow" id="modalHousePanelShadowDiv"></div><div class="dr-mpnl-ovf-hd dr-mpnl-trim dr-mpnl-pnl rich-mp-content" id="modalHousePanelContentDiv"><table border="0" cellpadding="0" cellspacing="0" class="rich-mp-content-table" id="modalHousePanelContentTable" style="height: 100%; width: 100%;"><tr style="height: 1%;"><td class="dr-mpnl-header rich-mpnl-header-cell"><div class="dr-mpnl-pnl-text dr-mpnl-pnl-h rich-mpnl-text rich-mpnl-header " id="modalHousePanelHeader" style="white-space: nowrap;">Vehicle Search Modal Panel</div></td></tr><tr style="height: 99%"><td class="dr-mpnl-pnl-b rich-mpnl-body" valign="top">
+<!--  	<f:facet name="controls">
+			<span style="cursor:pointer" onclick="javascript:Richfaces.hideModalPanel('modalHousePanel'); SimpleTogglePanelManager.toggleOnClient(onclick,'selCriteria:housePanel');">X</span>
+		</f:facet>		-->
+		<div class="content">
+<form id="j_id369" name="j_id369" method="post" action="/autoauctions/findavehicle.seam;jsessionid=FDF406F6DBB3C38E0ECB2410B666E139" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="j_id369" value="j_id369" />
+<table style="text-align:left">
+<tbody>
+<tr>
+<td><table>
+	<tr>
+<td>
+<input name="j_id369:j_id372" id="j_id369:j_id372:0" value="-590570566" type="checkbox" /><label for="j_id369:j_id372:0"> Akron Auto Auction (85)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id369:j_id372" id="j_id369:j_id372:1" value="-1357234830" type="checkbox" /><label for="j_id369:j_id372:1"> Alpine Auto Auction (47)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id369:j_id372" id="j_id369:j_id372:2" value="1110311562" type="checkbox" /><label for="j_id369:j_id372:2"> Auto Auction of Montana (85)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id369:j_id372" id="j_id369:j_id372:3" value="-1651501066" type="checkbox" /><label for="j_id369:j_id372:3"> Bel-Air Auto Auction (345)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id369:j_id372" id="j_id369:j_id372:4" value="1741284874" type="checkbox" /><label for="j_id369:j_id372:4"> Capital City Auto Auction (70)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id369:j_id372" id="j_id369:j_id372:5" value="-787968288" type="checkbox" /><label for="j_id369:j_id372:5"> Chattanooga Auto Auction (179)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id369:j_id372" id="j_id369:j_id372:6" value="-1474838790" type="checkbox" /><label for="j_id369:j_id372:6"> Greater Quad City Auto Auction (65)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id369:j_id372" id="j_id369:j_id372:7" value="370465090" type="checkbox" /><label for="j_id369:j_id372:7"> Manheim Arena Illinios (69)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id369:j_id372" id="j_id369:j_id372:8" value="-626990442" type="checkbox" /><label for="j_id369:j_id372:8"> Manheim Dallas-Fort Worth (79)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id369:j_id372" id="j_id369:j_id372:9" value="-1020645970" type="checkbox" /><label for="j_id369:j_id372:9"> Manheim Denver (93)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id369:j_id372" id="j_id369:j_id372:10" value="-1351478754" type="checkbox" /><label for="j_id369:j_id372:10"> Manheim El Paso (68)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id369:j_id372" id="j_id369:j_id372:11" value="-1064128794" type="checkbox" /><label for="j_id369:j_id372:11"> Manheim Fredericksburg (66)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id369:j_id372" id="j_id369:j_id372:12" value="-756853366" type="checkbox" /><label for="j_id369:j_id372:12"> Manheim Lafayette (69)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id369:j_id372" id="j_id369:j_id372:13" value="1663887482" type="checkbox" /><label for="j_id369:j_id372:13"> Manheim New England (43)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id369:j_id372" id="j_id369:j_id372:14" value="607409032" type="checkbox" /><label for="j_id369:j_id372:14"> Manheim New Jersey (138)</label></td>
+	</tr>
+</table></td>
+<td><img alt="" class="rich-spacer " height="1" id="j_id369:j_id375" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="40px" /></td>
+<td><table>
+	<tr>
+<td>
+<input name="j_id369:j_id377" id="j_id369:j_id377:0" value="1870220614" type="checkbox" /><label for="j_id369:j_id377:0"> Manheim New Mexico (75)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id369:j_id377" id="j_id369:j_id377:1" value="-1298434568" type="checkbox" /><label for="j_id369:j_id377:1"> Manheim North Carolina (168)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id369:j_id377" id="j_id369:j_id377:2" value="1364233342" type="checkbox" /><label for="j_id369:j_id377:2"> Manheim Northstar Minnesota (66)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id369:j_id377" id="j_id369:j_id377:3" value="1212115318" type="checkbox" /><label for="j_id369:j_id377:3"> Manheim Ohio (86)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id369:j_id377" id="j_id369:j_id377:4" value="-1370904210" type="checkbox" /><label for="j_id369:j_id377:4"> Manheim Phoenix (197)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id369:j_id377" id="j_id369:j_id377:5" value="1986860370" type="checkbox" /><label for="j_id369:j_id377:5"> Manheim Pittsburgh (36)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id369:j_id377" id="j_id369:j_id377:6" value="-2144359792" type="checkbox" /><label for="j_id369:j_id377:6"> Manheim San Antonio (157)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id369:j_id377" id="j_id369:j_id377:7" value="450016136" type="checkbox" /><label for="j_id369:j_id377:7"> Manheim San Diego (193)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id369:j_id377" id="j_id369:j_id377:8" value="-285088714" type="checkbox" /><label for="j_id369:j_id377:8"> Manheim Utah (73)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id369:j_id377" id="j_id369:j_id377:9" value="-2137569460" type="checkbox" /><label for="j_id369:j_id377:9"> Mid South Auto Auction (157)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id369:j_id377" id="j_id369:j_id377:10" value="-460465094" type="checkbox" /><label for="j_id369:j_id377:10"> Oklahoma Auto Exchange (157)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id369:j_id377" id="j_id369:j_id377:11" value="-393631272" type="checkbox" /><label for="j_id369:j_id377:11"> Rawls Auto Auction (197)</label></td>
+	</tr>
+</table></td>
+<td><img alt="" class="rich-spacer " height="1" id="j_id369:j_id380" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="40px" /></td>
+<td><table>
+</table></td>
+</tr>
+</tbody>
+</table>
+<input type="submit" name="j_id369:j_id385" value="Submit" /><input type="submit" name="j_id369:j_id386" value="Select All" /><input type="submit" name="j_id369:j_id387" value="Close" /><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="j_id1" autocomplete="off" />
+</form>
+        </div></td></tr></table></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalHousePanelResizerN" style="width: 40px; height: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalHousePanelResizerE" style="height: 40px; width: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalHousePanelResizerS" style="width: 40px; height: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalHousePanelResizerW" style="height: 40px; width: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalHousePanelResizerNWU" style="width: 40px; height: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalHousePanelResizerNEU" style="height: 40px; width: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalHousePanelResizerNEL" style="width: 40px; height: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalHousePanelResizerSEU" style="height: 40px; width: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalHousePanelResizerSEL" style="width: 40px; height: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalHousePanelResizerSWL" style="height: 40px; width: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalHousePanelResizerSWU" style="width: 40px; height: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalHousePanelResizerNWL" style="height: 40px; width: 4px;"></div></div></div><div class="dr-mpnl-mask-div dr-mpnl-mask-div-transparent rich-mpnl-mask-div" id="modalHousePanelCursorDiv" style="z-index: -200;"><button class="dr-mpnl-pnl-button" id="modalHousePanelLastHref"></button></div><script type="text/javascript">new ModalPanel('modalHousePanel',
+				{
+					width: 550,
+					height: 450,
+
+					minWidth: -1,
+					minHeight: -1,
+
+					resizeable: true,
+					moveable: true,
+
+					left: "auto",
+					top: "auto",
+
+					zindex: 100,onresize: '',onmove: '',onshow: '',onhide: '',onbeforeshow: '',onbeforehide: '',
+					domElementAttachment: "",				
+					keepVisualState: false,
+					showWhenRendered: false,
+					selectBehavior: "disable",
+
+					autosized: false,
+					overlapEmbedObjects: false});</script></div><script type="text/javascript"></script></div><div id="modalFuelPanel" style="display: none;"><input id="modalFuelPanelOpenedState" name="modalFuelPanelOpenedState" type="hidden" /><div class="rich-modalpanel " id="modalFuelPanelContainer" style="position: absolute; display: none; z-index: 100; background-color: inherit;"><div class="dr-mpnl-mask-div dr-mpnl-mask-div-opaque rich-mpnl-mask-div" id="modalFuelPanelDiv" style="z-index: 1;"><button class="dr-mpnl-pnl-button" id="modalFuelPanelFirstHref"></button></div><div class="dr-mpnl-panel rich-mpnl_panel"><div class="rich-mp-container" id="modalFuelPanelCDiv" style="position: absolute; left: 0px; top: 0px; z-index: 9;"><div class="dr-mpnl-shadow rich-mpnl-shadow" id="modalFuelPanelShadowDiv"></div><div class="dr-mpnl-ovf-hd dr-mpnl-trim dr-mpnl-pnl rich-mp-content" id="modalFuelPanelContentDiv"><table border="0" cellpadding="0" cellspacing="0" class="rich-mp-content-table" id="modalFuelPanelContentTable" style="height: 100%; width: 100%;"><tr style="height: 1%;"><td class="dr-mpnl-header rich-mpnl-header-cell"><div class="dr-mpnl-pnl-text dr-mpnl-pnl-h rich-mpnl-text rich-mpnl-header " id="modalFuelPanelHeader" style="white-space: nowrap;">Vehicle Search Modal Panel</div></td></tr><tr style="height: 99%"><td class="dr-mpnl-pnl-b rich-mpnl-body" valign="top">
+<!-- 	<f:facet name="controls">
+			<span style="cursor:pointer" onclick="javascript:Richfaces.hideModalPanel('modalFuelPanel'); SimpleTogglePanelManager.toggleOnClient(onclick,'selCriteria:fuelPanel');">X</span>
+		</f:facet>		 -->	
+		<div class="content">
+<form id="j_id391" name="j_id391" method="post" action="/autoauctions/findavehicle.seam;jsessionid=FDF406F6DBB3C38E0ECB2410B666E139" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="j_id391" value="j_id391" />
+<table style="text-align:left">
+<tbody>
+<tr>
+<td><table>
+	<tr>
+<td>
+<input name="j_id391:j_id394" id="j_id391:j_id394:0" value="-1638000934" type="checkbox" /><label for="j_id391:j_id394:0"> CNG-Dedicated (3)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id391:j_id394" id="j_id391:j_id394:1" value="1506036178" type="checkbox" /><label for="j_id391:j_id394:1"> CNG/Gas Bi-Fuel (15)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id391:j_id394" id="j_id391:j_id394:2" value="-2100798854" type="checkbox" /><label for="j_id391:j_id394:2"> Diesel (115)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id391:j_id394" id="j_id391:j_id394:3" value="-1436427122" type="checkbox" /><label for="j_id391:j_id394:3"> Ethanol/Gas (E85) (1507)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id391:j_id394" id="j_id391:j_id394:4" value="-1502481350" type="checkbox" /><label for="j_id391:j_id394:4"> Gasoline (1414)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id391:j_id394" id="j_id391:j_id394:5" value="-959220640" type="checkbox" /><label for="j_id391:j_id394:5"> Hybrid Electric (3)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id391:j_id394" id="j_id391:j_id394:6" value="591903948" type="checkbox" /><label for="j_id391:j_id394:6"> Non-Fueled Equipment (5)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id391:j_id394" id="j_id391:j_id394:7" value="1950610988" type="checkbox" /><label for="j_id391:j_id394:7"> Propane/Gas Bi-Fuel (1)</label></td>
+	</tr>
+</table></td>
+</tr>
+</tbody>
+</table>
+<input type="submit" name="j_id391:j_id397" value="Submit" /><input type="submit" name="j_id391:j_id398" value="Select All" /><input type="submit" name="j_id391:j_id399" value="Close" /><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="j_id1" autocomplete="off" />
+</form>		 
+        </div></td></tr></table></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalFuelPanelResizerN" style="width: 40px; height: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalFuelPanelResizerE" style="height: 40px; width: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalFuelPanelResizerS" style="width: 40px; height: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalFuelPanelResizerW" style="height: 40px; width: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalFuelPanelResizerNWU" style="width: 40px; height: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalFuelPanelResizerNEU" style="height: 40px; width: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalFuelPanelResizerNEL" style="width: 40px; height: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalFuelPanelResizerSEU" style="height: 40px; width: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalFuelPanelResizerSEL" style="width: 40px; height: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalFuelPanelResizerSWL" style="height: 40px; width: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalFuelPanelResizerSWU" style="width: 40px; height: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalFuelPanelResizerNWL" style="height: 40px; width: 4px;"></div></div></div><div class="dr-mpnl-mask-div dr-mpnl-mask-div-transparent rich-mpnl-mask-div" id="modalFuelPanelCursorDiv" style="z-index: -200;"><button class="dr-mpnl-pnl-button" id="modalFuelPanelLastHref"></button></div><script type="text/javascript">new ModalPanel('modalFuelPanel',
+				{
+					width: 200,
+					height: 400,
+
+					minWidth: -1,
+					minHeight: -1,
+
+					resizeable: true,
+					moveable: true,
+
+					left: "auto",
+					top: "auto",
+
+					zindex: 100,onresize: '',onmove: '',onshow: '',onhide: '',onbeforeshow: '',onbeforehide: '',
+					domElementAttachment: "",				
+					keepVisualState: false,
+					showWhenRendered: false,
+					selectBehavior: "disable",
+
+					autosized: false,
+					overlapEmbedObjects: false});</script></div><script type="text/javascript"></script></div><div id="modalMakePanel" style="display: none;"><input id="modalMakePanelOpenedState" name="modalMakePanelOpenedState" type="hidden" /><div class="rich-modalpanel " id="modalMakePanelContainer" style="position: absolute; display: none; z-index: 100; background-color: inherit;"><div class="dr-mpnl-mask-div dr-mpnl-mask-div-opaque rich-mpnl-mask-div" id="modalMakePanelDiv" style="z-index: 1;"><button class="dr-mpnl-pnl-button" id="modalMakePanelFirstHref"></button></div><div class="dr-mpnl-panel rich-mpnl_panel"><div class="rich-mp-container" id="modalMakePanelCDiv" style="position: absolute; left: 0px; top: 0px; z-index: 9;"><div class="dr-mpnl-shadow rich-mpnl-shadow" id="modalMakePanelShadowDiv"></div><div class="dr-mpnl-ovf-hd dr-mpnl-trim dr-mpnl-pnl rich-mp-content" id="modalMakePanelContentDiv"><table border="0" cellpadding="0" cellspacing="0" class="rich-mp-content-table" id="modalMakePanelContentTable" style="height: 100%; width: 100%;"><tr style="height: 1%;"><td class="dr-mpnl-header rich-mpnl-header-cell"><div class="dr-mpnl-pnl-text dr-mpnl-pnl-h rich-mpnl-text rich-mpnl-header " id="modalMakePanelHeader" style="white-space: nowrap;">Vehicle Search Modal Panel</div></td></tr><tr style="height: 99%"><td class="dr-mpnl-pnl-b rich-mpnl-body" valign="top">
+<!--    <f:facet name="controls">
+	    	<span style="cursor:pointer" onclick="javascript:Richfaces.hideModalPanel('modalMakePanel'); SimpleTogglePanelManager.toggleOnClient(onclick,'selCriteria:makePanel');">X</span>
+	    </f:facet>		-->
+		<div class="content">
+<form id="j_id403" name="j_id403" method="post" action="/autoauctions/findavehicle.seam;jsessionid=FDF406F6DBB3C38E0ECB2410B666E139" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="j_id403" value="j_id403" />
+<table style="text-align:left">
+<tbody>
+<tr>
+<td><table>
+	<tr>
+<td>
+<input name="j_id403:j_id406" id="j_id403:j_id406:0" value="-1018284844" type="checkbox" /><label for="j_id403:j_id406:0"> BLUEBIRD (4)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id403:j_id406" id="j_id403:j_id406:1" value="277065618" type="checkbox" /><label for="j_id403:j_id406:1"> CHEVROLET (1635)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id403:j_id406" id="j_id403:j_id406:2" value="152828574" type="checkbox" /><label for="j_id403:j_id406:2"> CHRYSLER (9)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id403:j_id406" id="j_id403:j_id406:3" value="-1088858260" type="checkbox" /><label for="j_id403:j_id406:3"> DODGE (484)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id403:j_id406" id="j_id403:j_id406:4" value="689438288" type="checkbox" /><label for="j_id403:j_id406:4"> FORD (403)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id403:j_id406" id="j_id403:j_id406:5" value="1108323108" type="checkbox" /><label for="j_id403:j_id406:5"> FREIGHTLINER (4)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id403:j_id406" id="j_id403:j_id406:6" value="-1701656526" type="checkbox" /><label for="j_id403:j_id406:6"> HONDA (1)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id403:j_id406" id="j_id403:j_id406:7" value="1200088172" type="checkbox" /><label for="j_id403:j_id406:7"> INTERNATTR (2)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id403:j_id406" id="j_id403:j_id406:8" value="-490765306" type="checkbox" /><label for="j_id403:j_id406:8"> ISUZU (1)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id403:j_id406" id="j_id403:j_id406:9" value="-989689922" type="checkbox" /><label for="j_id403:j_id406:9"> JEEP (17)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id403:j_id406" id="j_id403:j_id406:10" value="-1177950716" type="checkbox" /><label for="j_id403:j_id406:10"> KALYN (4)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id403:j_id406" id="j_id403:j_id406:11" value="-1543609910" type="checkbox" /><label for="j_id403:j_id406:11"> NAVISTAR (16)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id403:j_id406" id="j_id403:j_id406:12" value="878075034" type="checkbox" /><label for="j_id403:j_id406:12"> PONTIAC (471)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id403:j_id406" id="j_id403:j_id406:13" value="1644282968" type="checkbox" /><label for="j_id403:j_id406:13"> SATURN (1)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id403:j_id406" id="j_id403:j_id406:14" value="1499974898" type="checkbox" /><label for="j_id403:j_id406:14"> STERLING (1)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id403:j_id406" id="j_id403:j_id406:15" value="1571959280" type="checkbox" /><label for="j_id403:j_id406:15"> THOMASBILT (3)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id403:j_id406" id="j_id403:j_id406:16" value="-1180562078" type="checkbox" /><label for="j_id403:j_id406:16"> TRAIL MOBILE (1)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id403:j_id406" id="j_id403:j_id406:17" value="-1632284746" type="checkbox" /><label for="j_id403:j_id406:17"> WORKHORSE (6)</label></td>
+	</tr>
+</table></td>
+</tr>
+</tbody>
+</table>
+<input type="submit" name="j_id403:j_id409" value="Submit" /><input type="submit" name="j_id403:j_id410" value="Select All" /><input type="submit" name="j_id403:j_id411" value="Close" /><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="j_id1" autocomplete="off" />
+</form>	 
+        </div></td></tr></table></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalMakePanelResizerN" style="width: 40px; height: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalMakePanelResizerE" style="height: 40px; width: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalMakePanelResizerS" style="width: 40px; height: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalMakePanelResizerW" style="height: 40px; width: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalMakePanelResizerNWU" style="width: 40px; height: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalMakePanelResizerNEU" style="height: 40px; width: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalMakePanelResizerNEL" style="width: 40px; height: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalMakePanelResizerSEU" style="height: 40px; width: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalMakePanelResizerSEL" style="width: 40px; height: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalMakePanelResizerSWL" style="height: 40px; width: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalMakePanelResizerSWU" style="width: 40px; height: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalMakePanelResizerNWL" style="height: 40px; width: 4px;"></div></div></div><div class="dr-mpnl-mask-div dr-mpnl-mask-div-transparent rich-mpnl-mask-div" id="modalMakePanelCursorDiv" style="z-index: -200;"><button class="dr-mpnl-pnl-button" id="modalMakePanelLastHref"></button></div><script type="text/javascript">new ModalPanel('modalMakePanel',
+				{
+					width: 300,
+					height: 500,
+
+					minWidth: -1,
+					minHeight: -1,
+
+					resizeable: true,
+					moveable: true,
+
+					left: "auto",
+					top: "auto",
+
+					zindex: 100,onresize: '',onmove: '',onshow: '',onhide: '',onbeforeshow: '',onbeforehide: '',
+					domElementAttachment: "",				
+					keepVisualState: false,
+					showWhenRendered: false,
+					selectBehavior: "disable",
+
+					autosized: false,
+					overlapEmbedObjects: false});</script></div><script type="text/javascript"></script></div><div id="modalModelPanel" style="display: none;"><input id="modalModelPanelOpenedState" name="modalModelPanelOpenedState" type="hidden" /><div class="rich-modalpanel " id="modalModelPanelContainer" style="position: absolute; display: none; z-index: 100; background-color: inherit;"><div class="dr-mpnl-mask-div dr-mpnl-mask-div-opaque rich-mpnl-mask-div" id="modalModelPanelDiv" style="z-index: 1;"><button class="dr-mpnl-pnl-button" id="modalModelPanelFirstHref"></button></div><div class="dr-mpnl-panel rich-mpnl_panel"><div class="rich-mp-container" id="modalModelPanelCDiv" style="position: absolute; left: 0px; top: 0px; z-index: 9;"><div class="dr-mpnl-shadow rich-mpnl-shadow" id="modalModelPanelShadowDiv"></div><div class="dr-mpnl-ovf-hd dr-mpnl-trim dr-mpnl-pnl rich-mp-content" id="modalModelPanelContentDiv"><table border="0" cellpadding="0" cellspacing="0" class="rich-mp-content-table" id="modalModelPanelContentTable" style="height: 100%; width: 100%;"><tr style="height: 1%;"><td class="dr-mpnl-header rich-mpnl-header-cell"><div class="dr-mpnl-pnl-text dr-mpnl-pnl-h rich-mpnl-text rich-mpnl-header " id="modalModelPanelHeader" style="white-space: nowrap;">Vehicle Search Modal Panel</div></td></tr><tr style="height: 99%"><td class="dr-mpnl-pnl-b rich-mpnl-body" valign="top">
+<!--    <f:facet name="controls">
+	    	<span style="cursor:pointer" onclick="javascript:Richfaces.hideModalPanel('modalModelPanel'); SimpleTogglePanelManager.toggleOnClient(onclick,'selCriteria:modelPanel');">X</span>
+	    </f:facet>	 -->	
+		<div class="content">
+<form id="j_id415" name="j_id415" method="post" action="/autoauctions/findavehicle.seam;jsessionid=FDF406F6DBB3C38E0ECB2410B666E139" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="j_id415" value="j_id415" />
+<table style="text-align:left">
+<tbody>
+<tr>
+<td>Select Make to choose Model</td>
+<td><img alt="" class="rich-spacer " height="1" id="j_id415:j_id422" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="5px" /></td>
+<td></td>
+<td><img alt="" class="rich-spacer " height="1" id="j_id415:j_id427" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="5px" /></td>
+<td></td>
+<td><img alt="" class="rich-spacer " height="1" id="j_id415:j_id432" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="5px" /></td>
+<td></td>
+<td><img alt="" class="rich-spacer " height="1" id="j_id415:j_id437" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="5px" /></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<input type="submit" name="j_id415:j_id445" value="Close" /><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="j_id1" autocomplete="off" />
+</form>		 
+        </div></td></tr></table></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalModelPanelResizerN" style="width: 40px; height: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalModelPanelResizerE" style="height: 40px; width: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalModelPanelResizerS" style="width: 40px; height: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalModelPanelResizerW" style="height: 40px; width: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalModelPanelResizerNWU" style="width: 40px; height: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalModelPanelResizerNEU" style="height: 40px; width: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalModelPanelResizerNEL" style="width: 40px; height: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalModelPanelResizerSEU" style="height: 40px; width: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalModelPanelResizerSEL" style="width: 40px; height: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalModelPanelResizerSWL" style="height: 40px; width: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalModelPanelResizerSWU" style="width: 40px; height: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="modalModelPanelResizerNWL" style="height: 40px; width: 4px;"></div></div></div><div class="dr-mpnl-mask-div dr-mpnl-mask-div-transparent rich-mpnl-mask-div" id="modalModelPanelCursorDiv" style="z-index: -200;"><button class="dr-mpnl-pnl-button" id="modalModelPanelLastHref"></button></div><script type="text/javascript">new ModalPanel('modalModelPanel',
+				{
+					width: 800,
+					height: 600,
+
+					minWidth: -1,
+					minHeight: -1,
+
+					resizeable: true,
+					moveable: true,
+
+					left: "auto",
+					top: "auto",
+
+					zindex: 100,onresize: '',onmove: '',onshow: '',onhide: '',onbeforeshow: '',onbeforehide: '',
+					domElementAttachment: "",				
+					keepVisualState: false,
+					showWhenRendered: false,
+					selectBehavior: "disable",
+
+					autosized: false,
+					overlapEmbedObjects: false});</script></div><script type="text/javascript"></script></div><div id="modalTypePanel" style="display: none;"><input id="modalTypePanelOpenedState" name="modalTypePanelOpenedState" type="hidden" /><div class="rich-modalpanel " id="modalTypePanelContainer" style="position: absolute; display: none; z-index: 100; background-color: inherit;"><div class="dr-mpnl-mask-div dr-mpnl-mask-div-opaque rich-mpnl-mask-div" id="modalTypePanelDiv" style="z-index: 1;"><button class="dr-mpnl-pnl-button" id="modalTypePanelFirstHref"></button></div><div class="dr-mpnl-panel rich-mpnl_panel"><div class="rich-mp-container" id="modalTypePanelCDiv" style="position: absolute; left: 0px; top: 0px; z-index: 9;"><div class="dr-mpnl-shadow rich-mpnl-shadow" id="modalTypePanelShadowDiv"></div><div class=" dr-mpnl-pnl rich-mp-content" id="modalTypePanelContentDiv"><table border="0" cellpadding="0" cellspacing="0" class="rich-mp-content-table" id="modalTypePanelContentTable" style="width: 800px;height: 600px;"><tr style="height: 1%;"><td class="dr-mpnl-header rich-mpnl-header-cell"><div class="dr-mpnl-pnl-text dr-mpnl-pnl-h rich-mpnl-text rich-mpnl-header " id="modalTypePanelHeader" style="white-space: nowrap;">Vehicle Search Modal Panel</div></td></tr><tr style="height: 99%"><td class="dr-mpnl-pnl-b rich-mpnl-body" valign="top">
+<!--  	<f:facet name="controls">
+			<span style="cursor:pointer" onclick="javascript:Richfaces.hideModalPanel('modalTypePanel'); SimpleTogglePanelManager.toggleOnClient(onclick,'selCriteria:typePanel');">X</span>
+		</f:facet> -->		
+		<div class="content">
+<form id="j_id449" name="j_id449" method="post" action="/autoauctions/findavehicle.seam;jsessionid=FDF406F6DBB3C38E0ECB2410B666E139" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="j_id449" value="j_id449" />
+<table style="text-align:left">
+<tbody>
+<tr>
+<td><table>
+	<tr>
+<td>
+<input name="j_id449:j_id452" id="j_id449:j_id452:0" value="1487381718" type="checkbox" /><label for="j_id449:j_id452:0"> 3/4 Pickup Regular Cab (1)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id452" id="j_id449:j_id452:1" value="761883956" type="checkbox" /><label for="j_id449:j_id452:1"> Adult Passenger Conventional - 44 (1)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id452" id="j_id449:j_id452:2" value="-1349018028" type="checkbox" /><label for="j_id449:j_id452:2"> Adult Passenger Forward Control - 20 (1)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id452" id="j_id449:j_id452:3" value="-1710339908" type="checkbox" /><label for="j_id449:j_id452:3"> Adult Passenger Forward Control - 44 (6)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id452" id="j_id449:j_id452:4" value="-1447269444" type="checkbox" /><label for="j_id449:j_id452:4"> Cab and Chassis 4X2 (1)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id452" id="j_id449:j_id452:5" value="1420326256" type="checkbox" /><label for="j_id449:j_id452:5"> Chassis &amp; Cab 2-Door (1)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id452" id="j_id449:j_id452:6" value="427487088" type="checkbox" /><label for="j_id449:j_id452:6"> Chassis &amp; Crew Cab (1)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id452" id="j_id449:j_id452:7" value="2021886738" type="checkbox" /><label for="j_id449:j_id452:7"> Chassis &amp; Cutaway Cab (6)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id452" id="j_id449:j_id452:8" value="376090888" type="checkbox" /><label for="j_id449:j_id452:8"> Chassis &amp; Extended Cab (3)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id452" id="j_id449:j_id452:9" value="1385025566" type="checkbox" /><label for="j_id449:j_id452:9"> Chassis and Crew Cab (1)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id452" id="j_id449:j_id452:10" value="-2090062992" type="checkbox" /><label for="j_id449:j_id452:10"> Comp Pickup Ext Cab Spec. Services (1)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id452" id="j_id449:j_id452:11" value="-543382294" type="checkbox" /><label for="j_id449:j_id452:11"> Compact Pickup Crew Cab (11)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id452" id="j_id449:j_id452:12" value="669581326" type="checkbox" /><label for="j_id449:j_id452:12"> Compact Pickup Extended Cab (7)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id452" id="j_id449:j_id452:13" value="387379864" type="checkbox" /><label for="j_id449:j_id452:13"> Compact Pickup Regular  Cab (4)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id452" id="j_id449:j_id452:14" value="73733538" type="checkbox" /><label for="j_id449:j_id452:14"> Compact Pickup Regular Cab (22)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id452" id="j_id449:j_id452:15" value="2123735786" type="checkbox" /><label for="j_id449:j_id452:15"> Delivery Van Cut-off Cab (17)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id452" id="j_id449:j_id452:16" value="-1410375444" type="checkbox" /><label for="j_id449:j_id452:16"> Dump Truck (3)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id452" id="j_id449:j_id452:17" value="351996462" type="checkbox" /><label for="j_id449:j_id452:17"> Multistop Van (FC) Truck (18)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id452" id="j_id449:j_id452:18" value="-487883078" type="checkbox" /><label for="j_id449:j_id452:18"> Pickup (2)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id452" id="j_id449:j_id452:19" value="-761751414" type="checkbox" /><label for="j_id449:j_id452:19"> Pickup Crew Cab (68)</label></td>
+	</tr>
+</table></td>
+<td><img alt="" class="rich-spacer " height="1" id="j_id449:j_id455" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="40px" /></td>
+<td><table>
+	<tr>
+<td>
+<input name="j_id449:j_id457" id="j_id449:j_id457:0" value="-494662454" type="checkbox" /><label for="j_id449:j_id457:0"> Pickup Extended Cab (68)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id457" id="j_id449:j_id457:1" value="1707125814" type="checkbox" /><label for="j_id449:j_id457:1"> Pickup Reg Cab (1)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id457" id="j_id449:j_id457:2" value="93023086" type="checkbox" /><label for="j_id449:j_id457:2"> Pickup Regular Cab (49)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id457" id="j_id449:j_id457:3" value="-913719608" type="checkbox" /><label for="j_id449:j_id457:3"> School Conventional - 60 (1)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id457" id="j_id449:j_id457:4" value="-344113386" type="checkbox" /><label for="j_id449:j_id457:4"> Sedan Compact (905)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id457" id="j_id449:j_id457:5" value="-660342742" type="checkbox" /><label for="j_id449:j_id457:5"> Sedan Large - Police (17)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id457" id="j_id449:j_id457:6" value="565784338" type="checkbox" /><label for="j_id449:j_id457:6"> Sedan Midsize (871)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id457" id="j_id449:j_id457:7" value="964086150" type="checkbox" /><label for="j_id449:j_id457:7"> Sedan Midsize - Police (30)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id457" id="j_id449:j_id457:8" value="-1131871214" type="checkbox" /><label for="j_id449:j_id457:8"> Sedan Subcompact (24)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id457" id="j_id449:j_id457:9" value="1916182890" type="checkbox" /><label for="j_id449:j_id457:9"> Semi-Trailer Low Bed Multiple Axles (3)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id457" id="j_id449:j_id457:10" value="664914202" type="checkbox" /><label for="j_id449:j_id457:10"> Semi-Trailer S &amp; P Multiple Axles (1)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id457" id="j_id449:j_id457:11" value="-243927268" type="checkbox" /><label for="j_id449:j_id457:11"> Semi-Trailer Van Single Axle (1)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id457" id="j_id449:j_id457:12" value="-618147376" type="checkbox" /><label for="j_id449:j_id457:12"> Service Utility (104)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id457" id="j_id449:j_id457:13" value="-533044490" type="checkbox" /><label for="j_id449:j_id457:13"> Service Utility Crew Cab (21)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id457" id="j_id449:j_id457:14" value="-1198748154" type="checkbox" /><label for="j_id449:j_id457:14"> Service Utility Extended Cab (25)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id457" id="j_id449:j_id457:15" value="1062308464" type="checkbox" /><label for="j_id449:j_id457:15"> Service Utility with Cab (9)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id457" id="j_id449:j_id457:16" value="1191513134" type="checkbox" /><label for="j_id449:j_id457:16"> Sport Utility (9)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id457" id="j_id449:j_id457:17" value="-1913288810" type="checkbox" /><label for="j_id449:j_id457:17"> Sport Utility - Police (23)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id457" id="j_id449:j_id457:18" value="-1869965740" type="checkbox" /><label for="j_id449:j_id457:18"> Sport Utility 4-Door (124)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id457" id="j_id449:j_id457:19" value="1066202182" type="checkbox" /><label for="j_id449:j_id457:19"> Sports Utility 4-Door (1)</label></td>
+	</tr>
+</table></td>
+<td><img alt="" class="rich-spacer " height="1" id="j_id449:j_id460" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="40px" /></td>
+<td><table>
+	<tr>
+<td>
+<input name="j_id449:j_id462" id="j_id449:j_id462:0" value="-1130662238" type="checkbox" /><label for="j_id449:j_id462:0"> Stake and Platform 4X2 (2)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id462" id="j_id449:j_id462:1" value="-1334965580" type="checkbox" /><label for="j_id449:j_id462:1"> Stake Crew Cab (1)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id462" id="j_id449:j_id462:2" value="1435947758" type="checkbox" /><label for="j_id449:j_id462:2"> Stake Regular Cab (56)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id462" id="j_id449:j_id462:3" value="-1473963318" type="checkbox" /><label for="j_id449:j_id462:3"> Stake Truck 2-Door (22)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id462" id="j_id449:j_id462:4" value="-1584133094" type="checkbox" /><label for="j_id449:j_id462:4"> Stake Truck Crew Cab (2)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id462" id="j_id449:j_id462:5" value="-2115275270" type="checkbox" /><label for="j_id449:j_id462:5"> Standard Pickup (60)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id462" id="j_id449:j_id462:6" value="1415034050" type="checkbox" /><label for="j_id449:j_id462:6"> Standard Pickup Crew Cab (13)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id462" id="j_id449:j_id462:7" value="331355984" type="checkbox" /><label for="j_id449:j_id462:7"> Standard Pickup Regular Cab (2)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id462" id="j_id449:j_id462:8" value="2071992302" type="checkbox" /><label for="j_id449:j_id462:8"> Tractor 6X4 (10)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id462" id="j_id449:j_id462:9" value="-674168972" type="checkbox" /><label for="j_id449:j_id462:9"> Truck Wrecker 15-20 Tons Towing (1)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id462" id="j_id449:j_id462:10" value="426613962" type="checkbox" /><label for="j_id449:j_id462:10"> Truck Wrecker Over 20 Tons Towing (1)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id462" id="j_id449:j_id462:11" value="-1148795604" type="checkbox" /><label for="j_id449:j_id462:11"> Type 1 Conventional Cab &amp; Chassis (8)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id462" id="j_id449:j_id462:12" value="2015634976" type="checkbox" /><label for="j_id449:j_id462:12"> Type 1 Conventional Cab &amp; Chassis 4X4 (1)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id462" id="j_id449:j_id462:13" value="-333155360" type="checkbox" /><label for="j_id449:j_id462:13"> Type 2 Forward Control Van Integral Body (2)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id462" id="j_id449:j_id462:14" value="1668093198" type="checkbox" /><label for="j_id449:j_id462:14"> Type 3 Forward Cont Van Modular Body (10)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id462" id="j_id449:j_id462:15" value="885957626" type="checkbox" /><label for="j_id449:j_id462:15"> Van - Prisoner (4)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id462" id="j_id449:j_id462:16" value="1140241652" type="checkbox" /><label for="j_id449:j_id462:16"> Van 2 Passenger Cargo (1)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id462" id="j_id449:j_id462:17" value="263326324" type="checkbox" /><label for="j_id449:j_id462:17"> Van Body 4X2 (4)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id462" id="j_id449:j_id462:18" value="-48011626" type="checkbox" /><label for="j_id449:j_id462:18"> Van Cargo (30)</label></td>
+	</tr>
+	<tr>
+<td>
+<input name="j_id449:j_id462" id="j_id449:j_id462:19" value="-739873886" type="checkbox" /><label for="j_id449:j_id462:19"> Van Cargo with Windows (9)</label></td>
+	</tr>
+</table></td>
+</tr>
+</tbody>
+</table>
+<input type="submit" name="j_id449:j_id465" value="Submit" /><input type="submit" name="j_id449:j_id466" value="Select All" /><input type="submit" name="j_id449:j_id467" value="Close" /><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="j_id1" autocomplete="off" />
+</form>		 
+        </div></td></tr></table></div></div></div><div class="dr-mpnl-mask-div dr-mpnl-mask-div-transparent rich-mpnl-mask-div" id="modalTypePanelCursorDiv" style="z-index: -200;"><button class="dr-mpnl-pnl-button" id="modalTypePanelLastHref"></button></div><script type="text/javascript">new ModalPanel('modalTypePanel',
+				{
+					width: 800,
+					height: 600,
+
+					minWidth: -1,
+					minHeight: -1,
+
+					resizeable: false,
+					moveable: true,
+
+					left: "auto",
+					top: "auto",
+
+					zindex: 100,onresize: '',onmove: '',onshow: '',onhide: '',onbeforeshow: '',onbeforehide: '',
+					domElementAttachment: "",				
+					keepVisualState: false,
+					showWhenRendered: false,
+					selectBehavior: "disable",
+
+					autosized: true,
+					overlapEmbedObjects: false});</script></div><script type="text/javascript"></script></div><div id="wait" style="display: none;"><input id="waitOpenedState" name="waitOpenedState" type="hidden" /><div class="rich-modalpanel " id="waitContainer" style="position: absolute; display: none; z-index: 100; background-color: inherit;"><div class="dr-mpnl-mask-div dr-mpnl-mask-div-opaque rich-mpnl-mask-div" id="waitDiv" style="z-index: 1;"><button class="dr-mpnl-pnl-button" id="waitFirstHref"></button></div><div class="dr-mpnl-panel rich-mpnl_panel"><div class="rich-mp-container" id="waitCDiv" style="position: absolute; left: 0px; top: 0px; z-index: 9;"><div class="dr-mpnl-shadow rich-mpnl-shadow" id="waitShadowDiv"></div><div class=" dr-mpnl-pnl rich-mp-content" id="waitContentDiv"><table border="0" cellpadding="0" cellspacing="0" class="rich-mp-content-table" id="waitContentTable" style="width: 150px;height: 100px;"><tr style="height: 1%;"><td class="dr-mpnl-header rich-mpnl-header-cell"><div class="dr-mpnl-pnl-text dr-mpnl-pnl-h rich-mpnl-text rich-mpnl-header " id="waitHeader" style="white-space: nowrap;">Processing</div></td></tr><tr style="height: 99%"><td class="dr-mpnl-pnl-b rich-mpnl-body" valign="top">Wait Please...</td></tr></table></div></div></div><div class="dr-mpnl-mask-div dr-mpnl-mask-div-transparent rich-mpnl-mask-div" id="waitCursorDiv" style="z-index: -200;"><button class="dr-mpnl-pnl-button" id="waitLastHref"></button></div><script type="text/javascript">new ModalPanel('wait',
+				{
+					width: 150,
+					height: 100,
+
+					minWidth: -1,
+					minHeight: -1,
+
+					resizeable: false,
+					moveable: false,
+
+					left: "auto",
+					top: "auto",
+
+					zindex: 100,onresize: '',onmove: '',onshow: '',onhide: '',onbeforeshow: '',onbeforehide: '',
+					domElementAttachment: "",				
+					keepVisualState: false,
+					showWhenRendered: false,
+					selectBehavior: "disable",
+
+					autosized: true,
+					overlapEmbedObjects: false});</script></div><script type="text/javascript"></script></div><div id="photoPanel" style="display: none;"><input id="photoPanelOpenedState" name="photoPanelOpenedState" type="hidden" /><div class="rich-modalpanel " id="photoPanelContainer" style="position: absolute; display: none; z-index: 100; background-color: inherit;"><div class="dr-mpnl-mask-div dr-mpnl-mask-div-opaque rich-mpnl-mask-div" id="photoPanelDiv" style="z-index: 1;"><button class="dr-mpnl-pnl-button" id="photoPanelFirstHref"></button></div><div class="dr-mpnl-panel rich-mpnl_panel"><div class="rich-mp-container" id="photoPanelCDiv" style="position: absolute; left: 0px; top: 0px; z-index: 9;"><div class="dr-mpnl-shadow rich-mpnl-shadow" id="photoPanelShadowDiv"></div><div class="dr-mpnl-ovf-hd dr-mpnl-trim dr-mpnl-pnl rich-mp-content" id="photoPanelContentDiv"><div class="dr-mpnl-pnl-text rich-mpnl-text rich-mpnl-controls "><span id="hidelink" style="cursor:pointer">close</span><script type="text/javascript">//<![CDATA[
+ Richfaces.onAvailable('hidelink', function()
+{
+    Richfaces.componentControl.attachEvent('#hidelink', 'onclick', '#photoPanel', 'hide', function() { return {}; }, false);
+ });//]]></script></div><table border="0" cellpadding="0" cellspacing="0" class="rich-mp-content-table" id="photoPanelContentTable" style="height: 100%; width: 100%;"><tr style="height: 1%;"><td class="dr-mpnl-header rich-mpnl-header-cell"><div class="dr-mpnl-pnl-text dr-mpnl-pnl-h rich-mpnl-text rich-mpnl-header " id="photoPanelHeader" style="white-space: nowrap;">Vehicle Info</div></td></tr><tr style="height: 99%"><td class="dr-mpnl-pnl-b rich-mpnl-body" valign="top"><span id="j_id475"><table>
+<tbody>
+<tr>
+<td><a href="http://autoauctions.gsa.gov/autoauctions/;jsessionid=FDF406F6DBB3C38E0ECB2410B666E139" target="_blank"><img src="http://autoauctions.gsa.gov/autoauctions/;jsessionid=FDF406F6DBB3C38E0ECB2410B666E139" style="border:0" /></a>
+					<b></b><br />Disclaimer: Pictures and descriptions are for informational purposes only. Accuracy is not guaranteed. Information provided in the sales catalog or announced during the sale supersedes any information presented here.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><span style="font-weight:bold;color:green;">VIN</span><img alt="" class="rich-spacer " height="1" id="j_id487" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="5" /></td>
+<td><img alt="" class="rich-spacer " height="1" id="j_id489" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="10" /></td>
+<td><span style="font-weight:bold;color:green;">Year</span><img alt="" class="rich-spacer " height="1" id="j_id492" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="5" /></td>
+</tr>
+<tr>
+<td><span style="font-weight:bold;color:green;">Make</span><img alt="" class="rich-spacer " height="1" id="j_id496" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="5" /></td>
+<td><img alt="" class="rich-spacer " height="1" id="j_id498" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="10" /></td>
+<td><span style="font-weight:bold;color:green;">Model</span><img alt="" class="rich-spacer " height="1" id="j_id501" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="5" /></td>
+</tr>
+<tr>
+<td><span style="font-weight:bold;color:green;">Series</span><img alt="" class="rich-spacer " height="1" id="j_id505" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="5" /></td>
+<td><img alt="" class="rich-spacer " height="1" id="j_id507" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="10" /></td>
+<td><span style="font-weight:bold;color:green;">BodyStyle</span><img alt="" class="rich-spacer " height="1" id="j_id510" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="5" /></td>
+</tr>
+<tr>
+<td><span style="font-weight:bold;color:green;">Mileage</span><img alt="" class="rich-spacer " height="1" id="j_id514" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="5" /></td>
+<td><img alt="" class="rich-spacer " height="1" id="j_id516" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="10" /></td>
+<td><span style="font-weight:bold;color:green;">Color</span><img alt="" class="rich-spacer " height="1" id="j_id519" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="5" /></td>
+</tr>
+<tr>
+<td><span style="font-weight:bold;color:green;">Engine</span><img alt="" class="rich-spacer " height="1" id="j_id523" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="5" /></td>
+<td><img alt="" class="rich-spacer " height="1" id="j_id525" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="10" /></td>
+<td><span style="font-weight:bold;color:green;">EngineSize</span><img alt="" class="rich-spacer " height="1" id="j_id528" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="5" /></td>
+</tr>
+<tr>
+<td><span style="font-weight:bold;color:green;">Transmission</span><img alt="" class="rich-spacer " height="1" id="j_id532" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="5" /></td>
+<td><img alt="" class="rich-spacer " height="1" id="j_id534" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="10" /></td>
+<td><span style="font-weight:bold;color:green;">Four by Four</span><img alt="" class="rich-spacer " height="1" id="j_id537" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="5" /></td>
+</tr>
+<tr>
+<td><span style="font-weight:bold;color:green;">DriveType</span><img alt="" class="rich-spacer " height="1" id="j_id541" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="5" /></td>
+<td><img alt="" class="rich-spacer " height="1" id="j_id543" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="10" /></td>
+<td><span style="font-weight:bold;color:green;">Roof</span><img alt="" class="rich-spacer " height="1" id="j_id546" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="5" /></td>
+</tr>
+<tr>
+<td><span style="font-weight:bold;color:green;">Air Conditioning</span><img alt="" class="rich-spacer " height="1" id="j_id550" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="5" /></td>
+<td><img alt="" class="rich-spacer " height="1" id="j_id552" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="10" /></td>
+<td><span style="font-weight:bold;color:green;">AirBags</span><img alt="" class="rich-spacer " height="1" id="j_id555" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="5" /></td>
+</tr>
+<tr>
+<td><span style="font-weight:bold;color:green;">Interior</span><img alt="" class="rich-spacer " height="1" id="j_id559" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="5" /></td>
+<td><img alt="" class="rich-spacer " height="1" id="j_id561" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="10" /></td>
+<td><span style="font-weight:bold;color:green;">Tilt</span><img alt="" class="rich-spacer " height="1" id="j_id564" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="5" /></td>
+</tr>
+<tr>
+<td><span style="font-weight:bold;color:green;">Interior Color</span><img alt="" class="rich-spacer " height="1" id="j_id568" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="5" /></td>
+<td><img alt="" class="rich-spacer " height="1" id="j_id570" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="10" /></td>
+<td><span style="font-weight:bold;color:green;">Number Of Seats</span><img alt="" class="rich-spacer " height="1" id="j_id573" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="5" /></td>
+</tr>
+<tr>
+<td><span style="font-weight:bold;color:green;">Power Steering</span><img alt="" class="rich-spacer " height="1" id="j_id577" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="5" /></td>
+<td><img alt="" class="rich-spacer " height="1" id="j_id579" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="10" /></td>
+<td><span style="font-weight:bold;color:green;">Power Windows</span><img alt="" class="rich-spacer " height="1" id="j_id582" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="5" /></td>
+</tr>
+<tr>
+<td><span style="font-weight:bold;color:green;">Power Brakes</span><img alt="" class="rich-spacer " height="1" id="j_id586" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="5" /></td>
+<td><img alt="" class="rich-spacer " height="1" id="j_id588" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="10" /></td>
+<td><span style="font-weight:bold;color:green;">Cruise Control</span><img alt="" class="rich-spacer " height="1" id="j_id591" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="5" /></td>
+</tr>
+<tr>
+<td><span style="font-weight:bold;color:green;">Power Locks</span><img alt="" class="rich-spacer " height="1" id="j_id595" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="5" /></td>
+<td><img alt="" class="rich-spacer " height="1" id="j_id597" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="10" /></td>
+<td><span style="font-weight:bold;color:green;">Power Seats</span><img alt="" class="rich-spacer " height="1" id="j_id600" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="5" /></td>
+</tr>
+<tr>
+<td><span style="font-weight:bold;color:green;">Radio</span><img alt="" class="rich-spacer " height="1" id="j_id604" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="5" /></td>
+<td><img alt="" class="rich-spacer " height="1" id="j_id606" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="10" /></td>
+<td><span style="font-weight:bold;color:green;">Rear Defroster</span><img alt="" class="rich-spacer " height="1" id="j_id609" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="5" /></td>
+</tr>
+</tbody>
+</table>
+<span style="font-weight:bold;color:green;">Additional Equipment</span><img alt="" class="rich-spacer " height="1" id="j_id613" src="/autoauctions/a4j/g/3_3_1.GAimages/spacer.gif" width="5" /></span></td></tr></table></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="photoPanelResizerN" style="width: 40px; height: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="photoPanelResizerE" style="height: 40px; width: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="photoPanelResizerS" style="width: 40px; height: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="photoPanelResizerW" style="height: 40px; width: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="photoPanelResizerNWU" style="width: 40px; height: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="photoPanelResizerNEU" style="height: 40px; width: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="photoPanelResizerNEL" style="width: 40px; height: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="photoPanelResizerSEU" style="height: 40px; width: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="photoPanelResizerSEL" style="width: 40px; height: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="photoPanelResizerSWL" style="height: 40px; width: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="photoPanelResizerSWU" style="width: 40px; height: 4px;"></div><div class="dr-mpnl-resizer rich-mpnl-resizer" id="photoPanelResizerNWL" style="height: 40px; width: 4px;"></div></div></div><div class="dr-mpnl-mask-div dr-mpnl-mask-div-transparent rich-mpnl-mask-div" id="photoPanelCursorDiv" style="z-index: -200;"><button class="dr-mpnl-pnl-button" id="photoPanelLastHref"></button></div><script type="text/javascript">new ModalPanel('photoPanel',
+				{
+					width: 400,
+					height: 550,
+
+					minWidth: -1,
+					minHeight: -1,
+
+					resizeable: true,
+					moveable: true,
+
+					left: "auto",
+					top: "auto",
+
+					zindex: 100,onresize: '',onmove: '',onshow: '',onhide: '',onbeforeshow: '',onbeforehide: '',
+					domElementAttachment: "",				
+					keepVisualState: false,
+					showWhenRendered: false,
+					selectBehavior: "disable",
+
+					autosized: false,
+					overlapEmbedObjects: false});</script></div><script type="text/javascript"></script></div></div>
+			</td>
+
+		</tr>
+
+	</table>
+	<div class="footer">
+<form id="autoAuctionsFormFooter" name="autoAuctionsFormFooter" method="post" action="/autoauctions/findavehicle.seam;jsessionid=FDF406F6DBB3C38E0ECB2410B666E139" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="autoAuctionsFormFooter" value="autoAuctionsFormFooter" />
+
+<script type="text/javascript" language="Javascript">function dpf(f) {var adp = f.adp;if (adp != null) {for (var i = 0;i < adp.length;i++) {f.removeChild(adp[i]);}}};function apf(f, pvp) {var adp = new Array();f.adp = adp;var i = 0;for (k in pvp) {var p = document.createElement("input");p.type = "hidden";p.name = k;p.value = pvp[k];f.appendChild(p);adp[i++] = p;}};function jsfcljs(f, pvp, t) {apf(f, pvp);var ft = f.target;if (t) {f.target = t;}f.submit();f.target = ft;dpf(f);};</script>
+<a href="#" onclick="if(typeof jsfcljs == 'function'){jsfcljs(document.getElementById('autoAuctionsFormFooter'),{'autoAuctionsFormFooter:j_id616':'autoAuctionsFormFooter:j_id616'},'');}return false">Terms and Conditions</a>
+			-<a href="#" onclick="if(typeof jsfcljs == 'function'){jsfcljs(document.getElementById('autoAuctionsFormFooter'),{'autoAuctionsFormFooter:j_id618':'autoAuctionsFormFooter:j_id618'},'');}return false">Privacy policy</a>
+			-<a href="#" onclick="if(typeof jsfcljs == 'function'){jsfcljs(document.getElementById('autoAuctionsFormFooter'),{'autoAuctionsFormFooter:j_id620':'autoAuctionsFormFooter:j_id620'},'');}return false">Contact Us</a>
+	<!-- 		
+			<rich:spacer width="5px"/>
+			<h:outputText value="Follow Us on: " style="color:#00CECE;font-weight:bold;border:0;"/>
+			<h:outputLink value="http://twitter.com/gsaautoauctions" target="_blank">
+				<h:graphicImage value="/img/twitter.jpg" style="border:0;"/>
+			</h:outputLink>
+			 --><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="j_id1" autocomplete="off" />
+</form>
+	</div>
+	<!-- 
+			<a4j:status onstart="document.getElementById('wait').component.show()" onstop="document.getElementById('wait').component.hide()"/>
+			
+			 
+			<rich:modalPanel id="wait" autosized="true" width="150" height="50" moveable="false" resizeable="false">
+				<f:facet name="header">
+					<h:outputText value="Processing"/>
+				</f:facet>
+				<h:outputText value="Wait Please..."/>
+			</rich:modalPanel>
+			--></div></div>
+
+</body>
+</html>
